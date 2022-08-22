@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Amay's Notebook",
-            "content": "Please like and subscribe! . print(&quot;Hello Sir, how are you doing today?&quot;) . Hello Sir, how are you doing today? .",
+            "content": "import random # What are the chances game a = input(&quot;Enter a value from 1 - 10: &quot;) b = random.randint(1,10) print(&quot;The answer was :&quot;) print (b) if a==b : print(&quot;Good Job, you won!&quot;) else : print(&quot;You lost! Try again to win.&quot;) . The answer was : 4 You lost! Try again to win. . Please like and subscribe! . print(&quot;Hello Sir, how are you doing today?&quot;) . Hello Sir, how are you doing today? .",
             "url": "https://amayadvani.github.io/fastpages/2022/08/21/notebook.html",
             "relUrl": "/2022/08/21/notebook.html",
             "date": " • Aug 21, 2022"
