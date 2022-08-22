@@ -40,7 +40,6 @@ baseurl: "/fastpages" # the subpath of your site, e.g. "/blog".
 minima:
   social_links:
     instagram: amay.advani
-    github: fastai
 
 # Set this to true to get LaTeX math equation support
 use_math: 
