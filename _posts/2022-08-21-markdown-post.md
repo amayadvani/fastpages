@@ -3,47 +3,32 @@ toc: true
 layout: post
 description: Amay's first markdown post
 categories : [markdown]
-title : Amay's Markdown Post
+title : Goals for APCSP
 ---
-# Hello!
-
-## Made by: Amay Advani
+# Made by: Amay Advani
 
 Hello my name is Amay Advani and I am a Junior at Del Norte Highschool.
 
-`I am in period 3 with Mr. Morty!!`
-
-## Formatting
-
-*italics!* 
-
-**bold**
+// `I am in period 3 with Mr. Morty!!`
 
 [link_to_my_blog](https://amayadvani.github.io/fastpages/)
 
-## Example of Lists
+## Goals for APCSP Trimester #1
 
-1. My first name is Amay
-2. My last name is Advani
+1. Get and A overall
+2. Learn/expand my coding orientation and experience
+3. Prepare myself for another college level course
 
-## Boxes!
+// > quotation
+// {% include alert.html text="You can include alerts!!!!!!!!!!!" %}
 
-> quotation
-{% include alert.html text="You can include alerts!!!!!!!!!!!" %}
+// ## Table
 
-## Codes!!!
-
-```python
-print(2+5)
-```
-
-## Table
-
-| Column 1 | Column 2 |
-|-|-|
-| A thing | Another thing |
+// | Column 1 | Column 2 |
+// |-|-|
+// | A thing | Another thing |
 
 ## Footnote
 
 
-[^1]: I love foot notes !!!
+[^1]: I love APCSP!
