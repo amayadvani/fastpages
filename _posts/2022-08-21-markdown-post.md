@@ -9,9 +9,9 @@ title : Goals for APCSP
 
 Hello my name is Amay Advani and I am a Junior at Del Norte Highschool.
 
-// `I am in period 3 with Mr. Morty!!`
+<!--`I am in period 3 with Mr. Morty!!`
 
-[link_to_my_blog](https://amayadvani.github.io/fastpages/)
+[link_to_my_blog](https://amayadvani.github.io/fastpages/) -->
 
 ## Goals for APCSP Trimester #1
 
@@ -19,7 +19,7 @@ Hello my name is Amay Advani and I am a Junior at Del Norte Highschool.
 2. Learn/expand my coding orientation and experience
 3. Prepare myself for another college level course
 
-// > quotation
+<!-- > > quotation
 // {% include alert.html text="You can include alerts!!!!!!!!!!!" %}
 
 // ## Table
@@ -31,4 +31,4 @@ Hello my name is Amay Advani and I am a Junior at Del Norte Highschool.
 ## Footnote
 
 
-[^1]: I love APCSP!
+[^1]: I love APCSP! -->
