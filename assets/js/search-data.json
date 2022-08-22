@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Amay's Markdown Post",
-            "content": "Hello! . Made by: Amay Advani . Hello my name is Amay Advani and I am a Junior at Del Norte Highschool. . I am in period 3 with Mr. Morty!! . Formatting . italics! . bold . link_to_my_blog . Example of Lists . My first name is Amay | My last name is Advani | Boxes! . quotation . . You can include alerts!!!!!!!!!!! IMAGE! . . Codes!!! . print(2+5) . Table . Column 1 Column 2 . A thing | Another thing | . Footnote .",
+            "content": "Hello! . Made by: Amay Advani . Hello my name is Amay Advani and I am a Junior at Del Norte Highschool. . I am in period 3 with Mr. Morty!! . Formatting . italics! . bold . link_to_my_blog . Example of Lists . My first name is Amay | My last name is Advani | Boxes! . quotation . . You can include alerts!!!!!!!!!!! IMAGE! . . Codes!!! . print(2+5) . 7 . Table . thing 1 thing 2 . hi | hola! | . Footnote .",
             "url": "https://amayadvani.github.io/fastpages/markdown/2022/08/21/markdown-post.html",
             "relUrl": "/markdown/2022/08/21/markdown-post.html",
             "date": " • Aug 21, 2022"
