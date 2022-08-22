@@ -38,7 +38,7 @@ Hello my name is Amay Advani and I am a Junior at Del Norte Highschool.
 ## Codes!!!
 
 ```python
-print(2+5)
+print(5+2)
 ``` 
     7
 
