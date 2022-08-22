@@ -39,13 +39,14 @@ Hello my name is Amay Advani and I am a Junior at Del Norte Highschool.
 
 ```python
 print(2+5)
-```
+``` 
+    7
 
 ## Table
 
-| Column 1 | Column 2 |
+| thing 1 | thing 2 |
 |-|-|
-| A thing | Another thing |
+| hi | hola! |
 
 ## Footnote
 
