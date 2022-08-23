@@ -31,5 +31,4 @@ Hello my name is Amay Advani and I am a Junior at Del Norte Highschool.
 
 ## Footnotes
 
-
 [^1]: I love APCSP!
