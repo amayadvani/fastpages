@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: American Literature
 categories : [markdown]
-title : Advani American Symbols Writing Assignment
+title : Advani American Literature Symbols Writing Assignment
 ---
 
 ## Statue of Liberty
