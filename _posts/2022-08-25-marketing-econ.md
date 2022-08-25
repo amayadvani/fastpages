@@ -17,7 +17,7 @@ The Old Spice Advertising Firm, has developed an appropriate new slogan for Old 
 **Stay Fresh**
 
 
-![]({{ site.baseurl }}/images/Advani, Martinez Old Spice Logo.png "Old Spice")
+![]({{ site.baseurl }}/images/Advani, Martinez Old Spice Logo(1).png "Old Spice")
 
 We developed our slogan “Stay Fresh” through brainstorming appropriate and new ideas that will be best fitting, and gender neutral. Our new slogan is consistent and is memorable, while using short, attractive words to describe our clients' product. Our slogan is authentic by being honest when using our slogan. Our targeted audience are teens and young adults, so by advertising our product to people who need it, it keeps the product and slogan relevant. Along with all of that, our slogan also hits our targeted audience. Our product is mostly for teenagers, and for young adults, our product is marketed for the group because deodorant, hair products, and body products, is for every growing man. 
 
