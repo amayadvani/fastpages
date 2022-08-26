@@ -14,7 +14,7 @@ Partners: Amay Advani, Felipe Martinez
 
 The Old Spice Advertising Firm, has developed an appropriate new slogan for Old Spice
 
-**Stay Fresh**
+*Stay Fresh*
 
 
 ![]({{ site.baseurl }}/images/old_spice.png "Old Spice")
