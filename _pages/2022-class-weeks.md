@@ -11,7 +11,7 @@ title: Class Weeks
 - [Vocab for APCSP](https://amayadvani.github.io/fastpages/vocab/)
 - [Bash Tool Checks](https://amayadvani.github.io/fastpages/jupyter/2022/08/28/tool_check.html)
 - [Python Quiz](https://amayadvani.github.io/fastpages/2022/08/26/python-hacks.html)
-- [American Symbols Literature assignment](https://amayadvani.github.io/fastpages/2022/08/29/Advani-American-Symbols-Writing-Assignment.html)
+- [American Symbols Literature assignment](https://amayadvani.github.io/fastpages/2022/08/30/Advani-American-Symbols-Writing-Assignment.html)
 - [Marketing Econ](https://amayadvani.github.io/fastpages/markdown/2022/08/25/marketing-econ.html)
 - [Class Weeks](https://amayadvani.github.io/fastpages/_pages/2022-class-weeks.html)
 
