@@ -7,6 +7,8 @@ categories: [markdown]
 title: Class Weeks
 ---
 
+## Week 2
+- [List and Dictionary Hacks](https://amayadvani.github.io/fastpages/2022/08/29/TP120-python_lists.html)
 ## Week 1
 - [Vocab for APCSP](https://amayadvani.github.io/fastpages/vocab/)
 - [Bash Tool Checks](https://amayadvani.github.io/fastpages/jupyter/2022/08/28/tool_check.html)
