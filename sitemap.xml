@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://amayadvani.github.io/fastpages/jupyter/2020/02/20/test.html</loc>
-<lastmod>2020-02-20T00:00:00-06:00</lastmod>
-</url>
-<url>
 <loc>https://amayadvani.github.io/fastpages/markdown/2022/08/21/markdown-post.html</loc>
 <lastmod>2022-08-21T00:00:00-05:00</lastmod>
 </url>
@@ -25,12 +21,12 @@
 <lastmod>2022-08-28T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://amayadvani.github.io/fastpages/collegeboard/python_lists</loc>
+<loc>https://amayadvani.github.io/fastpages/2022/08/29/TP120-python_lists.html</loc>
 <lastmod>2022-08-29T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://amayadvani.github.io/fastpages/2022/08/30/Advani-American-Symbols-Writing-Assignment.html</loc>
-<lastmod>2022-08-30T00:00:00-05:00</lastmod>
+<loc>https://amayadvani.github.io/fastpages/2022/08/31/Advani-American-Symbols-Writing-Assignment.html</loc>
+<lastmod>2022-08-31T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://amayadvani.github.io/fastpages/_pages/2022-class-weeks.html</loc>
