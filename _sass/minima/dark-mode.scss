@@ -2,7 +2,7 @@ $high-emph: rgba(white, 0.87);
 $med-emph: rgba(white, 0.69); //Noicee
 $low-emph: rgba(white, 0.38);
 $dark-grey : #121212; 
-$clear : clear ;
+$clear :clear;
 // $dark-grey : #1F1B24;
 $overlay: mix($dark-grey, white, 95%);
 $overlay-light: mix($dark-grey, white, 86%);
@@ -26,7 +26,7 @@ a:hover {
 
 .site-nav {
     background-color: $dark-grey;
-    border-color: $overlay-light;
+    border-color: $clear;
 }
 
 * {
@@ -36,7 +36,7 @@ a:hover {
 pre, code {
     // BVas a lighter colour to better highlight short code words
     border-color: $overlay-light;
-    background-color: $clear;
+    background-color: $overlay;
 }
 
 .page-description {
