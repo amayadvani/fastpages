@@ -5,6 +5,7 @@ $low-emph: rgba(white, 0.38);
 $dark-grey : #121212; // Colour 2
 $overlay: mix($deep-pu, white, 95%);
 $overlay-light: mix($deep-purple, white, 86%);
+<<<<<<< HEAD
 
 * {
     scrollbar-color: $dark-grey $overlay-light;
@@ -14,6 +15,17 @@ canvas {
     filter: invert(100%);
 }
 
+=======
+
+* {
+    scrollbar-color: $dark-grey $overlay-light;
+}
+
+canvas {
+    filter: invert(100%);
+}
+
+>>>>>>> 5eadbf61dadd6b7a6038f9764c2713612990e0d9
 table th {
     background-color: $overlay;
     border-color: $overlay-light;
@@ -30,4 +42,10 @@ table td {
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
 @import "minima/fastpages-dracula-highlight"; 
+<<<<<<< HEAD
 @import "minima/dark-mode";
+=======
+@import "minima/dark-mode";
+// If you want to turn off dark background for syntax highlighting, comment or delete the below line.
+
+>>>>>>> 5eadbf61dadd6b7a6038f9764c2713612990e0d9
