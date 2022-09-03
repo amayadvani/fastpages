@@ -2,7 +2,7 @@
 toc: true 
 layout: post
 description: Amay's first markdown post
-categories : [markdown]
+categories : [markdown, week0]
 title : Goals for APCSP
 ---
 # Made by: Amay Advani
