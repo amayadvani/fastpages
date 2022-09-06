@@ -214,6 +214,7 @@ window.onload = wrap_img;
 
 <span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
 
+
 <span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
     <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"John"</span><span class="p">,</span>
     <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Mortensen"</span><span class="p">,</span>
@@ -242,7 +243,9 @@ window.onload = wrap_img;
     <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2010 Lexus IS 250"</span><span class="p">]</span>
 <span class="p">})</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Please enter your first name:"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">collect_data</span><span class="p">():</span> 
+
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"Please enter your first name:"</span><span class="p">)</span>
 <span class="n">fn</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Please enter your last name:"</span><span class="p">)</span>
@@ -276,6 +279,17 @@ window.onload = wrap_img;
     <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="n">Owns_Cars</span>
 <span class="p">})</span>
 
+<span class="k">def</span> <span class="nf">more_info</span><span class="p">():</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">ans</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Do you want to add more info to the database? "</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ans</span> <span class="o">==</span> <span class="s2">"yes"</span><span class="p">:</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="n">collect_data</span><span class="p">()</span> <span class="c1">#collect data if input is "yes"</span>
+            <span class="nb">print</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span> <span class="c1">#stop function if input isn't "yes"</span>
+            <span class="k">break</span>
+
+
 
 
 <span class="c1"># Print the data structure</span>
@@ -292,21 +306,20 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Please enter your first name:
-Amay
+<pre>Amay 
 Please enter your last name:
 Advani
 Please enter your date of birth:
-June 10
+june 10
 Please enter your county:
 San Diego
 Please enter your favorite color:
-blue
+Blue
 Please input your favorite movie:
-Harry Potter
+Harry potter
 Please input your owned cars:
-2012 Prius
-[{'FirstName': 'John', 'LastName': 'Mortensen', 'DOB': 'October 21', 'Residence': 'San Diego', 'Email': 'jmortensen@powayusd.com', 'Owns_Cars': ['2015-Fusion', '2011-Ranger', '2003-Excursion', '1997-F350', '1969-Cadillac']}, {'FirstName': 'Sunny', 'LastName': 'Naidu', 'DOB': 'August 2', 'Residence': 'Temecula', 'Email': 'snaidu@powayusd.com', 'Owns_Cars': ['4Runner']}, {'FirstName': 'Sarah', 'LastName': 'Liu', 'DOB': 'January 12', 'Residence': 'San Diego', 'Email': 'mail2sarahl@gmail.com', 'Owns_Cars': ['2010 Lexus IS 250']}, {'FirstName': 'Amay', 'LastName': 'Advani', 'DOB': 'June 10', 'Residence': 'San Diego', 'Fav_Color': 'blue', 'Fav_movie': 'Harry Potter', 'Owns_Cars': '2012 Prius'}]
+2012 prius
+[{'FirstName': 'John', 'LastName': 'Mortensen', 'DOB': 'October 21', 'Residence': 'San Diego', 'Email': 'jmortensen@powayusd.com', 'Owns_Cars': ['2015-Fusion', '2011-Ranger', '2003-Excursion', '1997-F350', '1969-Cadillac']}, {'FirstName': 'Sunny', 'LastName': 'Naidu', 'DOB': 'August 2', 'Residence': 'Temecula', 'Email': 'snaidu@powayusd.com', 'Owns_Cars': ['4Runner']}, {'FirstName': 'Sarah', 'LastName': 'Liu', 'DOB': 'January 12', 'Residence': 'San Diego', 'Email': 'mail2sarahl@gmail.com', 'Owns_Cars': ['2010 Lexus IS 250']}, {'FirstName': 'Amay ', 'LastName': 'Advani', 'DOB': 'june 10', 'Residence': 'San Diego', 'Fav_Color': 'Blue', 'Fav_movie': 'Harry potter', 'Owns_Cars': '2012 prius'}]
 </pre>
 </div>
 </div>
