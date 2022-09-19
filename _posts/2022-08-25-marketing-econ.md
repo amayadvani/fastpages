@@ -2,7 +2,7 @@
 toc: true 
 layout: post
 description: Marketing Economics
-categories : [markdown]
+categories : [markdown, week1]
 title : Amay Advani Marketing Economics Slogan Assignment
 ---
 
