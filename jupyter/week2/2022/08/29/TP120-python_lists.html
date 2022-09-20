@@ -11,15 +11,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="List, Iterations, and Dictionaries with for loop" />
 <meta property="og:description" content="List, Iterations, and Dictionaries with for loop" />
-<link rel="canonical" href="https://amayadvani.github.io/fastpages/jupyter/2022/08/29/TP120-python_lists.html" />
-<meta property="og:url" content="https://amayadvani.github.io/fastpages/jupyter/2022/08/29/TP120-python_lists.html" />
+<link rel="canonical" href="https://amayadvani.github.io/fastpages/jupyter/week2/2022/08/29/TP120-python_lists.html" />
+<meta property="og:url" content="https://amayadvani.github.io/fastpages/jupyter/week2/2022/08/29/TP120-python_lists.html" />
 <meta property="og:site_name" content="Amay Advani" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-08-29T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Lists and Dictionary Hacks" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Amay Advani"},"dateModified":"2022-08-29T00:00:00-05:00","datePublished":"2022-08-29T00:00:00-05:00","description":"List, Iterations, and Dictionaries with for loop","headline":"Lists and Dictionary Hacks","mainEntityOfPage":{"@type":"WebPage","@id":"https://amayadvani.github.io/fastpages/jupyter/2022/08/29/TP120-python_lists.html"},"url":"https://amayadvani.github.io/fastpages/jupyter/2022/08/29/TP120-python_lists.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Amay Advani"},"dateModified":"2022-08-29T00:00:00-05:00","datePublished":"2022-08-29T00:00:00-05:00","description":"List, Iterations, and Dictionaries with for loop","headline":"Lists and Dictionary Hacks","mainEntityOfPage":{"@type":"WebPage","@id":"https://amayadvani.github.io/fastpages/jupyter/week2/2022/08/29/TP120-python_lists.html"},"url":"https://amayadvani.github.io/fastpages/jupyter/week2/2022/08/29/TP120-python_lists.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://amayadvani.github.io/fastpages/feed.xml" title="Amay Advani" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -90,6 +90,9 @@ window.onload = wrap_img;
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
         <a class="category-tags-link" href="/fastpages/categories/#jupyter">jupyter</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/fastpages/categories/#week2">week2</a>
         
       
       </p>
@@ -211,6 +214,7 @@ window.onload = wrap_img;
 
 <span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
 
+
 <span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
     <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"John"</span><span class="p">,</span>
     <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Mortensen"</span><span class="p">,</span>
@@ -239,7 +243,9 @@ window.onload = wrap_img;
     <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2010 Lexus IS 250"</span><span class="p">]</span>
 <span class="p">})</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Please enter your first name:"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">collect_data</span><span class="p">():</span> 
+
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"Please enter your first name:"</span><span class="p">)</span>
 <span class="n">fn</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Please enter your last name:"</span><span class="p">)</span>
@@ -273,6 +279,17 @@ window.onload = wrap_img;
     <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="n">Owns_Cars</span>
 <span class="p">})</span>
 
+<span class="k">def</span> <span class="nf">more_info</span><span class="p">():</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">ans</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Do you want to add more info to the database? "</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ans</span> <span class="o">==</span> <span class="s2">"yes"</span><span class="p">:</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="n">collect_data</span><span class="p">()</span> <span class="c1">#collect data if input is "yes"</span>
+            <span class="nb">print</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span> <span class="c1">#stop function if input isn't "yes"</span>
+            <span class="k">break</span>
+
+
 
 
 <span class="c1"># Print the data structure</span>
@@ -289,21 +306,20 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Please enter your first name:
-Amay
+<pre>Amay 
 Please enter your last name:
 Advani
 Please enter your date of birth:
-June 10
+june 10
 Please enter your county:
 San Diego
 Please enter your favorite color:
-blue
+Blue
 Please input your favorite movie:
-Harry Potter
+Harry potter
 Please input your owned cars:
-2012 Prius
-[{'FirstName': 'John', 'LastName': 'Mortensen', 'DOB': 'October 21', 'Residence': 'San Diego', 'Email': 'jmortensen@powayusd.com', 'Owns_Cars': ['2015-Fusion', '2011-Ranger', '2003-Excursion', '1997-F350', '1969-Cadillac']}, {'FirstName': 'Sunny', 'LastName': 'Naidu', 'DOB': 'August 2', 'Residence': 'Temecula', 'Email': 'snaidu@powayusd.com', 'Owns_Cars': ['4Runner']}, {'FirstName': 'Sarah', 'LastName': 'Liu', 'DOB': 'January 12', 'Residence': 'San Diego', 'Email': 'mail2sarahl@gmail.com', 'Owns_Cars': ['2010 Lexus IS 250']}, {'FirstName': 'Amay', 'LastName': 'Advani', 'DOB': 'June 10', 'Residence': 'San Diego', 'Fav_Color': 'blue', 'Fav_movie': 'Harry Potter', 'Owns_Cars': '2012 Prius'}]
+2012 prius
+[{'FirstName': 'John', 'LastName': 'Mortensen', 'DOB': 'October 21', 'Residence': 'San Diego', 'Email': 'jmortensen@powayusd.com', 'Owns_Cars': ['2015-Fusion', '2011-Ranger', '2003-Excursion', '1997-F350', '1969-Cadillac']}, {'FirstName': 'Sunny', 'LastName': 'Naidu', 'DOB': 'August 2', 'Residence': 'Temecula', 'Email': 'snaidu@powayusd.com', 'Owns_Cars': ['4Runner']}, {'FirstName': 'Sarah', 'LastName': 'Liu', 'DOB': 'January 12', 'Residence': 'San Diego', 'Email': 'mail2sarahl@gmail.com', 'Owns_Cars': ['2010 Lexus IS 250']}, {'FirstName': 'Amay ', 'LastName': 'Advani', 'DOB': 'june 10', 'Residence': 'San Diego', 'Fav_Color': 'Blue', 'Fav_movie': 'Harry potter', 'Owns_Cars': '2012 prius'}]
 </pre>
 </div>
 </div>
@@ -517,7 +533,7 @@ Your answers: {'Question One': '1', 'Question Two': '2', 'Question Three ': '3',
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/fastpages/jupyter/2022/08/29/TP120-python_lists.html" hidden></a>
+</script><a class="u-url" href="/fastpages/jupyter/week2/2022/08/29/TP120-python_lists.html" hidden></a>
 </article>
 
       </div>
