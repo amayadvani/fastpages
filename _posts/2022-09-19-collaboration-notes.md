@@ -5,7 +5,8 @@ description: College Board Collaboration notes
 categories : [markdown, week4]
 title : 1.1 Collaboration Notes
 ---
- ### Collaboration Video 1
+
+### Collaboration Video 1
 Mr. Han visited Facebook and saw that there was a lot of open space as well as a lovely outdoor seating area. All of these factors present chances for cooperation. The range of skills and viewpoints of people who created it are reflected in the computer innovation that results from effective cooperation. The software gains fresh ideas as a result of collaboration. Super Mario Brothers 2 is an updated version of Super Mario Bros. Where you went vertically in a level was something Kensuke Tanabe understood. Also include horizontal levels, according to Shigeru Miyamoto. Then, they worked together to merge both vertical and horizontal levels in Super Mario Brothers 3.Bias is less likely to be present when computer advances are developed through collaboration with a variety of viewpoints. This implies that new features and concepts that wouldn't be seen alone are conceivable while working together.
 
 Takeway: Communication, consensus-building, dispute resolution, and negotiation are all part of collaboration. 
