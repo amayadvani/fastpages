@@ -6,7 +6,7 @@ toc: true
 badges: true 
 comments: true
 author: Amay Advani
-catagories: [juypter]
+catagories: [jupyter, week1]
 nb_path: _notebooks/2022-08-26-python-hacks.ipynb
 layout: notebook
 ---

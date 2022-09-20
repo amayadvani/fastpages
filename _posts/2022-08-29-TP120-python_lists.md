@@ -4,7 +4,7 @@ description: List, Iterations, and Dictionaries with for loop
 title: Lists and Dictionary Hacks
 toc: true
 comments: true
-categories: [jupyter]
+categories: [jupyter, week2]
 author: Amay Advani
 nb_path: _notebooks/2022-08-29-TP120-python_lists.ipynb
 layout: notebook
@@ -83,6 +83,7 @@ layout: notebook
 
 <span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
 
+
 <span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
     <span class="s2">&quot;FirstName&quot;</span><span class="p">:</span> <span class="s2">&quot;John&quot;</span><span class="p">,</span>
     <span class="s2">&quot;LastName&quot;</span><span class="p">:</span> <span class="s2">&quot;Mortensen&quot;</span><span class="p">,</span>
@@ -111,7 +112,9 @@ layout: notebook
     <span class="s2">&quot;Owns_Cars&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;2010 Lexus IS 250&quot;</span><span class="p">]</span>
 <span class="p">})</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Please enter your first name:&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">collect_data</span><span class="p">():</span> 
+
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Please enter your first name:&quot;</span><span class="p">)</span>
 <span class="n">fn</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">fn</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Please enter your last name:&quot;</span><span class="p">)</span>
@@ -145,6 +148,17 @@ layout: notebook
     <span class="s2">&quot;Owns_Cars&quot;</span><span class="p">:</span> <span class="n">Owns_Cars</span>
 <span class="p">})</span>
 
+<span class="k">def</span> <span class="nf">more_info</span><span class="p">():</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">ans</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Do you want to add more info to the database? &quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ans</span> <span class="o">==</span> <span class="s2">&quot;yes&quot;</span><span class="p">:</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="n">collect_data</span><span class="p">()</span> <span class="c1">#collect data if input is &quot;yes&quot;</span>
+            <span class="nb">print</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span> <span class="c1">#stop function if input isn&#39;t &quot;yes&quot;</span>
+            <span class="k">break</span>
+
+
 
 
 <span class="c1"># Print the data structure</span>
@@ -161,21 +175,20 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Please enter your first name:
-Amay
+<pre>Amay 
 Please enter your last name:
 Advani
 Please enter your date of birth:
-June 10
+june 10
 Please enter your county:
 San Diego
 Please enter your favorite color:
-blue
+Blue
 Please input your favorite movie:
-Harry Potter
+Harry potter
 Please input your owned cars:
-2012 Prius
-[{&#39;FirstName&#39;: &#39;John&#39;, &#39;LastName&#39;: &#39;Mortensen&#39;, &#39;DOB&#39;: &#39;October 21&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Email&#39;: &#39;jmortensen@powayusd.com&#39;, &#39;Owns_Cars&#39;: [&#39;2015-Fusion&#39;, &#39;2011-Ranger&#39;, &#39;2003-Excursion&#39;, &#39;1997-F350&#39;, &#39;1969-Cadillac&#39;]}, {&#39;FirstName&#39;: &#39;Sunny&#39;, &#39;LastName&#39;: &#39;Naidu&#39;, &#39;DOB&#39;: &#39;August 2&#39;, &#39;Residence&#39;: &#39;Temecula&#39;, &#39;Email&#39;: &#39;snaidu@powayusd.com&#39;, &#39;Owns_Cars&#39;: [&#39;4Runner&#39;]}, {&#39;FirstName&#39;: &#39;Sarah&#39;, &#39;LastName&#39;: &#39;Liu&#39;, &#39;DOB&#39;: &#39;January 12&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Email&#39;: &#39;mail2sarahl@gmail.com&#39;, &#39;Owns_Cars&#39;: [&#39;2010 Lexus IS 250&#39;]}, {&#39;FirstName&#39;: &#39;Amay&#39;, &#39;LastName&#39;: &#39;Advani&#39;, &#39;DOB&#39;: &#39;June 10&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Fav_Color&#39;: &#39;blue&#39;, &#39;Fav_movie&#39;: &#39;Harry Potter&#39;, &#39;Owns_Cars&#39;: &#39;2012 Prius&#39;}]
+2012 prius
+[{&#39;FirstName&#39;: &#39;John&#39;, &#39;LastName&#39;: &#39;Mortensen&#39;, &#39;DOB&#39;: &#39;October 21&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Email&#39;: &#39;jmortensen@powayusd.com&#39;, &#39;Owns_Cars&#39;: [&#39;2015-Fusion&#39;, &#39;2011-Ranger&#39;, &#39;2003-Excursion&#39;, &#39;1997-F350&#39;, &#39;1969-Cadillac&#39;]}, {&#39;FirstName&#39;: &#39;Sunny&#39;, &#39;LastName&#39;: &#39;Naidu&#39;, &#39;DOB&#39;: &#39;August 2&#39;, &#39;Residence&#39;: &#39;Temecula&#39;, &#39;Email&#39;: &#39;snaidu@powayusd.com&#39;, &#39;Owns_Cars&#39;: [&#39;4Runner&#39;]}, {&#39;FirstName&#39;: &#39;Sarah&#39;, &#39;LastName&#39;: &#39;Liu&#39;, &#39;DOB&#39;: &#39;January 12&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Email&#39;: &#39;mail2sarahl@gmail.com&#39;, &#39;Owns_Cars&#39;: [&#39;2010 Lexus IS 250&#39;]}, {&#39;FirstName&#39;: &#39;Amay &#39;, &#39;LastName&#39;: &#39;Advani&#39;, &#39;DOB&#39;: &#39;june 10&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Fav_Color&#39;: &#39;Blue&#39;, &#39;Fav_movie&#39;: &#39;Harry potter&#39;, &#39;Owns_Cars&#39;: &#39;2012 prius&#39;}]
 </pre>
 </div>
 </div>
