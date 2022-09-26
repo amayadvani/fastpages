@@ -7,4 +7,4 @@ permalink : pages/submenu.html
 title : Sub Menu
 ---
 
-{% include frontend.html %}
+{% include nav_frontend.html %}
