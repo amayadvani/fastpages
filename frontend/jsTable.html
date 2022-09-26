@@ -135,7 +135,7 @@ window.onload = wrap_img;
         this.library = [];
         this.tvshows.forEach(tvshow => {this.library.push(tvshow);});
     }
-    printTvshows = new library(Tvshows);
+    printTvshows = new library(tvshows);
 
     library.prototype._toHtml = function() {
     var style = (
