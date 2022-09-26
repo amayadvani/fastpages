@@ -172,8 +172,8 @@
       ,"page7": {
           "title": "Sub Menu",
           "content": "{% include frontend.html %} .",
-          "url": "https://amayadvani.github.io/fastpages/_pages/submenu.html",
-          "relUrl": "/_pages/submenu.html",
+          "url": "https://amayadvani.github.io/fastpages/submenu/",
+          "relUrl": "/submenu/",
           "date": ""
       }
       
