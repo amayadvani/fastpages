@@ -4,21 +4,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Javascript Table | Amay Advani</title>
+<title>Javascript and HTML | Amay Advani</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Javascript Table" />
+<meta property="og:title" content="Javascript and HTML" />
+<meta name="author" content="Amay Advani" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Using html fragments to create a table" />
-<meta property="og:description" content="Using html fragments to create a table" />
-<link rel="canonical" href="https://amayadvani.github.io/fastpages/frontend/jstable" />
-<meta property="og:url" content="https://amayadvani.github.io/fastpages/frontend/jstable" />
+<meta name="description" content="Using HTML fragments and JavaScript data to build a table" />
+<meta property="og:description" content="Using HTML fragments and JavaScript data to build a table" />
+<link rel="canonical" href="https://amayadvani.github.io/fastpages/markdown/week5/2022/09/26/jstable.html" />
+<meta property="og:url" content="https://amayadvani.github.io/fastpages/markdown/week5/2022/09/26/jstable.html" />
 <meta property="og:site_name" content="Amay Advani" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-09-27T00:00:00-05:00" />
+<meta property="article:published_time" content="2022-09-26T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Javascript Table" />
+<meta property="twitter:title" content="Javascript and HTML" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-27T00:00:00-05:00","datePublished":"2022-09-27T00:00:00-05:00","description":"Using html fragments to create a table","headline":"Javascript Table","mainEntityOfPage":{"@type":"WebPage","@id":"https://amayadvani.github.io/fastpages/frontend/jstable"},"url":"https://amayadvani.github.io/fastpages/frontend/jstable"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Amay Advani"},"dateModified":"2022-09-26T00:00:00-05:00","datePublished":"2022-09-26T00:00:00-05:00","description":"Using HTML fragments and JavaScript data to build a table","headline":"Javascript and HTML","mainEntityOfPage":{"@type":"WebPage","@id":"https://amayadvani.github.io/fastpages/markdown/week5/2022/09/26/jstable.html"},"url":"https://amayadvani.github.io/fastpages/markdown/week5/2022/09/26/jstable.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://amayadvani.github.io/fastpages/feed.xml" title="Amay Advani" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,9 +74,11 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Javascript Table</h1><p class="page-description">Using html fragments to create a table</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-27T00:00:00-05:00" itemprop="datePublished">
-        Sep 27, 2022
-      </time>
+    <h1 class="post-title p-name" itemprop="name headline">Javascript and HTML</h1><p class="page-description">Using HTML fragments and JavaScript data to build a table</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-26T00:00:00-05:00" itemprop="datePublished">
+        Sep 26, 2022
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Amay Advani</span></span>
        • <span class="read-time" title="Estimated read time">
     
     
@@ -101,113 +104,74 @@ window.onload = wrap_img;
     <ul id="toc" class="section-nav">
 </ul><body>
 
-
+ 
+ 
 <script>
-
-function logItType(output) {
-   console.log(typeof output, ";", output);
-}
-
-function tvshow(name, rating, genre) {
-   this.name = name;
-   this.rating = rating;
-   this.genre = genre;
-   this.role = "";
-}
-
-// define a setter for role in Person data
-Show.prototype.setRole = function(role) {
-   this.role = role;
-}
-
-// define a JSON conversion "method" associated with Person
-Show.prototype.toJSON = function() {
-   const obj = {name: this.name, rating: this.rating, genre: this.genre, role: this.role};
-   const json = JSON.stringify(obj);
-   return json;
-}
-
-// make a new Person and assign to variable teacher
-var netflix = new Show("Stranger Things", "9.7/10", "Mystery, Action");  
-logItType(teacher);  
-logItType(teacher.toJSON());  
-
-// output of Object and JSON/string associated with Teacher
-teacher.setRole("netflix");   // set the role
-logItType(netflix); 
-logItType(netflix.toJSON());
-
-var soaptwoday = [ 
-    new Show("Rick and Morty", "10/10", "Sci-Fi"), 
-    new Show("Lucifer", "9.3/10", "Mystery"), 
-    new Show("Avatar", "9.8/10", "Fiction, Action")
-];
-
-function theater(netflix, soaptoday){ 
-   teacher.setRole("Netflix");
-   this.netflix = netflix;
-   this.theater = [netflix];
-   this.soaptwoday= soaptwoday;
-   this.soaptwoday.forEach(soaptwoday => { soaptwoday.setRole("Soap2day"); this.theater.push(soaptwoday); });
-   this.json = [];
-   this.theater.forEach(show => this.json.push(show.toJSON()));
-}
-
-movies = new Theater(netflix, soaptwoday);
-
-logItType(movies.theater);  
-logItType(movies.theater[0].name);  
-logItType(movies.json[0]); 
-logItType(JSON.parse(movies.json[0]));
-
-Theater.prototype._toHtml = function() {
- 
-  var style = (
-    "display:inline-block;" +
-    "border: 2px solid black;" +
-    "box-shadow: 0.8em 0.4em 0.4em grey;"
-  );
-
-  var body = "";
-
-  body += "<tr>";
-  body += "<th><mark>" + "Name" + "</mark></th>";
-  body += "<th><mark>" + "Rating" + "</mark></th>";
-  body += "<th><mark>" + "Genre" + "</mark></th>";
-  body += "<th><mark>" + "Role" + "</mark></th>";
-  body += "</tr>";
- 
-  for (var row of movies.theater) {
-    
-    body += "<tr>";
-   
-    body += "<td>" + row.name + "</td>";
-    body += "<td>" + row.rating+ "</td>";
-    body += "<td>" + row.genre + "</td>";
-    body += "<td>" + row.role + "</td>";
   
+    function tvshow(name, rating, genre) {
+        this.name = name;
+        this.rating = rating;
+        this.genre = genre;
+    }
+   
+      var tvshows = [
+         new tvshow("Rick and Morty", "10/10", "Sci-Fi"),
+         new tvshow("Lucifer", "9.3/10", "Mystery"),
+         new tvshow("Stranger Things", "10/10", "Action, Mystery"),
+         new tvshow("Avatar", "9.8/10", "Fiction, Action")
+         
+         ];
+ 
+ 
+    function library(tvshows){  
+        this.tvshows = tvshows;
+        this.library = [];
+        this.tvshows.forEach(tvshow => {this.library.push(tvshow);});
+    }
+    printTvshows = new library(tvshows);
+ 
+    library.prototype._toHtml = function() {
+    var style = (
+        "display:inline-block;" +
+        "border: 2px solid blue;"
+    );
+ 
+    var body = "";
+ 
     body += "<tr>";
-  }
-
-   // Build and HTML fragment of div, table, table body
-  return (
-    "<div style='" + style + "'>" +
-      "<table>" +
-        body +
-      "</table>" +
-    "</div>"
-  );
-
-};
-
-$$.html(movies._toHtml());
-
+    body += "<th>" + "Title" + "</th>";
+    body += "<th>" + "Rat" + "</th>";
+    body += "<th>" + "Genre" + "</th>";
+    body += "</tr>";
+ 
+    for (var row of printTvshows.library) {
+    body += "<tr>";
+    body += "<td>" + row.name + "</td>";
+    body += "<td>" + row.genre + "</td>";
+    body += "<td>" + row.rating + "</td>";
+    body += "<tr>";
+    }
+ 
+ 
+    // Build and HTML fragment of div, table, table body
+    return (
+        "<div style='" + style + "'>" +
+            "<table>" +
+                body +
+            "</table>" +
+        "</div>"
+        );
+    };
+   
+    document.getElementById('myTable').innerHTML = printTvshows._toHtml();
+ 
 </script>
  
 
 
+
 </body>
-  </div><a class="u-url" href="/fastpages/frontend/jstable" hidden></a>
+  </div><a class="u-url" href="/fastpages/markdown/week5/2022/09/26/jstable.html" hidden></a>
 </article>
 
       </div>
