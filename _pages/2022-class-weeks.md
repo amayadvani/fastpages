@@ -85,22 +85,22 @@ title: Class Weeks
   </tr>
   <tr>
     <th>8</th>
-    <td><a href="https://kaiden-dough.github.io/fastpages/data/jokes">Project Week one Review Ticket</a></td>
-    <td><a href="https://lawnmowers.nighthawkcodescrums.gq/api/jokes/">Team Video</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/data/trfa">Frontend of True False API</a></td>
+    <td><a href="https://github.com/e-shen2022/emma_blog/issues/9">Project Week one Review Ticket</a></td>
+    <td><a href="https://www.youtube.com/watch?v=t7Uug3ZN0mk&ab_channel=emmashen">Team Video</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/2022/10/03/AP-error_testing.html">API Error testing</a></td>
     <td><a href="https://amayadvani.github.io/fastpages/rapidapi/">Rapid API</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week8/2022/10/11/theinternet.html">4.1 Internet Connections</a></td>
     <td><a href="https://lawnmowers.nighthawkcodescrums.gq/GroupProjectPlan/">Group Plan</a></td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <th>7</th>
-    <td><a href="https://kaiden-dough.github.io/fastpages/collegeboard/error">Changes to Error Testing Code</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week7/2022/10/03/identifyingandcorrectingerrors.html">College Board Notes and Quiz</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/week7/2022/10/09/api.html">Airline API</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week7/2022/10/09/groupplan.html">Group Plan</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/2022/10/03/AP-error_testing.html">Changes to Error Testing Code</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/2022/10/09/AP-notes.html">College Board Notes and Quiz</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/rapidapi/">Diagnosis API</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/markdown/week5/2022/09/25/big-idea.html">Group Plan</a></td>
     <td></td>
     <td></td>
     <td></td>
@@ -109,11 +109,11 @@ title: Class Weeks
   </tr>
   <tr>
     <th>6</th>
-    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week6/2022/10/02/apgrades.html">Unit 1 Grades</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week6/2022/10/02/awsdeployment.html">AWS Deployment</a></td>
-    <td><a href="https://www.kaidennighthawk.tk/">My website</a></td>
-    <td><a href="http://52.15.68.161/">Group Flask</a></td>
-    <td><a href="http://52.15.68.161/GroupProjectPlan/">Group Plan</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/2022/10/03/AP-error_testing.html">Unit 1 Grades</a></td>
+    <td><a href="">AWS Deployment</a></td>
+    <td><a href="https://www.amaynighthawk.tk">My website</a></td>
+    <td><a href="http://10.8.133.148/">Group Flask</a></td>
+    <td><a href="http://10.8.133.148/scrum/">Group Plan</a></td>
     <td></td>
     <td></td>
     <td></td>
