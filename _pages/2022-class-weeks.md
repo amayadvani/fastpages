@@ -180,6 +180,7 @@ title: Class Weeks
     <td><a href="https://amayadvani.github.io/fastpages/jupyter/week2/2022/08/29/TP120-python_lists.html">Dictionary Hacks</a></td>
     <td><a href="https://amayadvani.github.io/fastpages/_pages/2022-class-weeks.html">Class Weeks</a></td>
     <td><a href="https://amayadvani.github.io/fastpages/jupyter/week1/2022/08/28/tool_check.html">Homepage Customization</a></td>
+    <td></td>
   </tr>
   <tr>
     <th>0</th>
