@@ -168,9 +168,9 @@
     
         ,"post15": {
             "title": "Amay's Notebook",
-            "content": "Made by: Amay Advani . Please like and subscribe! . print(&quot;Hello Sir, how are you doing today?&quot;) . Hello Sir, how are you doing today? .",
-            "url": "https://amayadvani.github.io/fastpages/2022/08/21/notebook.html",
-            "relUrl": "/2022/08/21/notebook.html",
+            "content": "import random # What are the chances game a = input(&quot;Enter a value from 1 - 10: &quot;) b = random.randint(1,10) if a==b : print(&quot;Good Job, you won!&quot;) else : print(&quot;You lost! Try again to win.&quot;) print(&quot;You inputed : &quot;) print(a) print(&quot;The answer was :&quot;) print (b) . You lost! Try again to win. You inputed : 10 The answer was : 6 . Please like and subscribe! . print(&quot;Hello Sir, how are you doing today?&quot;) . Hello Sir, how are you doing today? .",
+            "url": "https://amayadvani.github.io/fastpages/juypter/week0/2022/08/21/notebook.html",
+            "relUrl": "/juypter/week0/2022/08/21/notebook.html",
             "date": " • Aug 21, 2022"
         }
         
@@ -192,7 +192,7 @@
   
       ,"page0": {
           "title": "Class Weeks",
-          "content": ". . Week Completed . . 12 Trimester 1 Final Reflection | NATM | Class Weeks Table | | | | | | | . 11 Vase Fastpages | Backend API | Fastpages Repo | Flask Repo | Trimester 1 Final Reflection | | | | | . 10 Team Scrumboard | Diagnosis Prototype | Commit History | | | | | | | . 9 Review ticket | Project Progress | Team Project Video | | | | | . 8 Project Week one Review Ticket | Team Video | API Error testing | Rapid API | Group Plan | | | | | . 7 Changes to Error Testing Code | College Board Notes and Quiz | Diagnosis API | Group Plan | | | | | | . 6 Unit 1 Grades | AWS Deployment | My website | Group Flask | Group Plan | | | | | . 5 Personal JavaScript | HTML JavaScript Table | Program Purpose | Program Purpose Visual | | | | | | . 4 Collaboration (Unit 1.1) | Psychology and the Good Life | Local Fastpages Server (only on my computer) | Flask Python Server (only on my computer) | | | | | | . 3 AppLab App | AppLab Write Up | Creative Performance Task Brainstorm | | | | | | | . 2 Python Tech Talk | Class Weeks | Theme and Dark Mode Exploration | | | | | | | . 1 Notes for APCSP | My Class and Goals | Personal Coding Journey | Bash Tool Checks | Python Quiz | APEL Syllabus | DNHS Info | Class Weeks | Homepage Customization | . 0 About Me | Markdown Post | Jupyter Notebook | | | | | | | . .",
+          "content": ". . Week Completed . . 12 Trimester 1 Final Reflection | NATM | Class Weeks Table | | | | | | | . 11 Vase Fastpages | Backend API | Fastpages Repo | Flask Repo | Trimester 1 Final Reflection | | | | | . 10 Team Scrumboard | Diagnosis Prototype | Commit History | | | | | | | . 9 Review ticket | Project Progress | Team Project Video | | | | | | | . 8 Project Week one Review Ticket | Team Video | API Error testing | Rapid API | Group Plan | | | | | . 7 Changes to Error Testing Code | College Board Notes and Quiz | Diagnosis API | Group Plan | | | | | | . 6 Unit 1 Grades | AWS Deployment | My website | Group Flask | Group Plan | | | | | . 5 Personal JavaScript | HTML JavaScript Table | Program Purpose | Program Purpose Visual | | | | | | . 4 Collaboration (Unit 1.1) | Local Fastpages Server (only on my computer) | Flask Python Server (only on my computer) | | | | | | | . 3 AppLab App | AppLab Write Up | Creative Performance Task Brainstorm | Review ticket | | | | | | . 2 Python quiz | Class Weeks | Week two review ticket | | | | | | | . 1 Notes for APCSP | My Class and Goals | Personal Coding Journey | Bash Tool Checks | Python Quiz | Dictionary Hacks | Class Weeks | Homepage Customization | . 0 About Me | Marketing Econ post | Jupyter Notebook | | | | | | | . .",
           "url": "https://amayadvani.github.io/fastpages/_pages/2022-class-weeks.html",
           "relUrl": "/_pages/2022-class-weeks.html",
           "date": ""
