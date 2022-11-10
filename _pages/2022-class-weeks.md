@@ -82,6 +82,8 @@ title: Class Weeks
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <th>8</th>
@@ -121,10 +123,10 @@ title: Class Weeks
   </tr>
   <tr>
     <th>5</th>
-    <td><a href="https://kaiden-dough.github.io/fastpages/week5/2022/09/23/javascript.html">Personal JavaScript</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/week5/2022/09/23/htmljavascripttable.html">HTML JavaScript Table</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/week5/2022/09/25/ProgramPurposeTeam.html">Program Purpose</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/week5/2022/09/25/htmlprogrampurpose.html">Program Purpose Visual</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/markdown/week5/2022/09/26/jstable.html">Personal JavaScript</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/pages/submenu.html">HTML JavaScript Table</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/markdown/week5/2022/09/25/big-idea.html">Program Purpose</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/markdown/week5/2022/09/25/big-idea.html">Program Purpose Visual</a></td>
     <td></td>
     <td></td>
     <td></td>
@@ -133,10 +135,10 @@ title: Class Weeks
   </tr>
   <tr>
     <th>4</th>
-    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week4/2022/09/13/collaboration.html">Collaboration (Unit 1.1)</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/jupyter/week4/2022/09/15/psychology.html">Psychology and the Good Life</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/markdown/week4/2022/09/19/collaboration-notes.html">Collaboration (Unit 1.1)</a></td>
     <td><a href="http://127.0.0.1:4000/fastpages/">Local Fastpages Server (only on my computer)</a></td>
     <td><a href="http://127.0.0.1:5000/">Flask Python Server (only on my computer)</a></td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -145,21 +147,22 @@ title: Class Weeks
   </tr>
   <tr>
     <th>3</th>
-    <td><a href="https://studio.code.org/projects/applab/rrhMZ0WoGvsJaDqiw1F6EZQbpIunXvd8U0o591jiu4g">AppLab App</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/code.org/week3/2022/09/11/AppLab.html">AppLab Write Up</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/jupyter/week3/2022/09/11/creativeperformancetask.html">Creative Performance Task Brainstorm</a></td>
+    <td><a href="https://studio.code.org/projects/applab/lGXN5M6PCQyTsxnK5Eoh9smKzj_h86vf0KLN5Pw3aWY">AppLab App</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/jupyter/week3/2022/09/18/code-org.html">AppLab Write Up</a></td>
+    <td><a href="https://docs.google.com/document/d/1RX6tM69iN7ROI08JDabsySudZdk-A-aL1VDg5w9rRGk/edit">Creative Performance Task Brainstorm</a></td>
+    <td><a href="https://github.com/amayadvani/fastpages/issues/6">Review ticket</a></td>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    
   </tr>
   <tr>
     <th>2</th>
-    <td><a href="https://kaiden-dough.github.io/fastpages/python/week2/2022/09/04/python_lists.html">Python Tech Talk</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/jupyter/week3/2022/09/11/python-extra-quiz.html">Python quiz</a></td>
     <td><a href="https://kaiden-dough.github.io/fastpages/_pages/04_class-weeks.html">Class Weeks</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week2/2022/09/04/theme.html">Theme and Dark Mode Exploration</a></td>
+    <td><a href="https://github.com/amayadvani/fastpages/issues/5">Week two review ticket</a></td>
     <td></td>
     <td></td>
     <td></td>
@@ -173,17 +176,16 @@ title: Class Weeks
     <td><a href="https://kaiden-dough.github.io/fastpages/jupyter/week1/2022/08/25/myclassesandgoals.html">My Class and Goals</a></td>
     <td><a href="https://kaiden-dough.github.io/fastpages/jupyter/week1/2022/08/27/mycodingjourney.html">Personal Coding Journey</a></td>
     <td><a href="https://kaiden-dough.github.io/fastpages/bash/week1/2022/08/27/bashtoolcheck.html">Bash Tool Checks</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/python/week1/2022/08/26/Python-Hacks.html">Python Quiz</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/2022/08/25/APEL-syllabus.html">APEL Syllabus</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/dnhs/week1/2022/08/25/delnortehighschool.html">DNHS Info</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/_pages/04_class-weeks.html">Class Weeks</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/">Homepage Customization</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/2022/08/26/python-hacks.html">Python Quiz</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/jupyter/week2/2022/08/29/TP120-python_lists.html">Dictionary Hacks</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/_pages/2022-class-weeks.html">Class Weeks</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/jupyter/week1/2022/08/28/tool_check.html">Homepage Customization</a></td>
   </tr>
   <tr>
     <th>0</th>
-    <td><a href="https://kaiden-dough.github.io/fastpages/about/">About Me</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/markdown/week0/2022/08/21/myfirstmarkdownpost.html">Markdown Post</a></td>
-    <td><a href="https://kaiden-dough.github.io/fastpages/jupyter/week0/2022/08/21/firstjupyternotebook.html">Jupyter Notebook</a></td>
+    <td><a href="https://amay.advani.github.io/fastpages/about/">About Me</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/markdown/week1/2022/08/25/marketing-econ.html">Marketing Econ post</a></td>
+    <td><a href="https://amay.advani.github.io/fastpages/jupyter/week0/2022/08/21/firstjupyternotebook.html">Jupyter Notebook</a></td>
     <td></td>
     <td></td>
     <td></td>
