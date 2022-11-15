@@ -38,8 +38,9 @@ baseurl: "/fastpages" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
-  social_links:
-    instagram: amay.advani
+  skin: dark
+#  social_links:
+#    instagram: amay.advani
 
 # Set this to true to get LaTeX math equation support
 use_math: 
