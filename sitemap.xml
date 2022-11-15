@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://amayadvani.github.io/fastpages/frontend/binary</loc>
+<lastmod>2022-07-07T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>https://amayadvani.github.io/fastpages/markdown/week0/2022/08/21/markdown-post.html</loc>
 <lastmod>2022-08-21T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://amayadvani.github.io/fastpages/juypter/week0/2022/08/21/notebook.html</loc>
+<loc>https://amayadvani.github.io/fastpages/2022/08/21/notebook.html</loc>
 <lastmod>2022-08-21T00:00:00-05:00</lastmod>
 </url>
 <url>
@@ -67,6 +71,10 @@
 <url>
 <loc>https://amayadvani.github.io/fastpages/jupyter/week3/2022/11/09/code-org.html</loc>
 <lastmod>2022-11-09T00:00:00-06:00</lastmod>
+</url>
+<url>
+<loc>https://amayadvani.github.io/fastpages/jupyter/week3/2022/11/14/code-org.html</loc>
+<lastmod>2022-11-14T00:00:00-06:00</lastmod>
 </url>
 <url>
 <loc>https://amayadvani.github.io/fastpages/_pages/2022-class-weeks.html</loc>
