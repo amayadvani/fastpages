@@ -24,7 +24,7 @@ The ```make server``` command starts a live server based on the fastpages being 
 ![]({{site.baseurl}}/images/makeserver1.png)
 Showing command
 
-![]({{site.baseurl}}/images/makerserver2.png)
+![]({{site.baseurl}}/images/makeserver2.png)
 Showing proof
 
 ![]({{site.baseurl}}/images/makeserverbrowser.png)
