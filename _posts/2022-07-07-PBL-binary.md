@@ -1,3 +1,9 @@
+---
+title: Binary Hacks
+layout: default
+description: HTML and JavaScript.
+author: Amay Advani
+---
 {% assign BITS = 24 %}
 
 <div class="container bg-primary">
