@@ -267,9 +267,20 @@
   
 
   
+      ,"page1": {
+          "title": "2048 game",
+          "content": "2048 . 0 Join the numbers and get to the 2048 tile! . . Try again How to play: Use your arrow keys to move the tiles. When two tiles with the same number touch, they merge into one! . . Created by Gabriele Cirulli. Based on 1024 by Veewo Studio and conceptually similar to Threes by Asher Vollmer. . .",
+          "url": "https://amayadvani.github.io/fastpages/2048/",
+          "relUrl": "/2048/",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page2": {
+
+  
+      ,"page3": {
           "title": "About Me",
           "content": "My Name is Amay Advani and I am a Junior at Del Norte High School! . I am on the swim team, FRC/FTC, and in DECA. . This website is powered by Amay Advani [^1]. .",
           "url": "https://amayadvani.github.io/fastpages/about/",
@@ -290,7 +301,7 @@
   
 
   
-      ,"page7": {
+      ,"page8": {
           "title": "Sub Menu",
           "content": "{% include nav_frontend.html %} .",
           "url": "https://amayadvani.github.io/fastpages/pages/submenu.html",
@@ -303,7 +314,7 @@
   
 
   
-      ,"page9": {
+      ,"page10": {
           "title": "Vocab",
           "content": "input = something that the user types in through code or the input function . output = some thing that the input function sparks . sequence = several lines of code together . front matter = section of code that is on top of files with key-values . variable = word used as a container to hold information . string = series of characters . boolean = value that is either true or false .",
           "url": "https://amayadvani.github.io/fastpages/vocab/",
@@ -328,7 +339,7 @@
   
 
   
-      ,"page15": {
+      ,"page16": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://amayadvani.github.io/fastpages/robots.txt",
