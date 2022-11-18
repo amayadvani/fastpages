@@ -37,11 +37,7 @@ author: Amay Advani
                                     onclick="input('1')">
                                       1</button>
                             <button type="button" 
-                                    class="btn btn-danger float-right ml-2" 
-                                    onclick="cls()">
-                                      AC</button>
-                            <button type="button" 
-                                    class="btn btn-warning float-right" 
+                                    class="btn btn-warning float-middle" 
                                     onclick="backspace()">
                                       Backspace</button>
                         </div>
