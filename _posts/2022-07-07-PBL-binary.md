@@ -46,6 +46,7 @@ type: pbl
             margin-top: 0.5rem;
             width: 100px;
             height: 100px;
+            outline: 3px solid black;
         }
             </style>
         <div id="colorBox"></div>
