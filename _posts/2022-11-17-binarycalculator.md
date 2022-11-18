@@ -12,16 +12,11 @@ author: Amay Advani
         <!-- this tag makes is so that the browser can translate the code-->
         <title>Binary Calculator</title>
         <!--this bootstrap allows me to import javascript and html design and templates-->
-        <link rel= "stylesheet"
-            href= 
-"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
-              integrity=
-"sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
-              crossorigin="anonymous" />
     </head>
     <body>
     <!--this div tag allows me to group coded content together or a division tag -->
          <div class="container">
+    <!--jumbotron is a class modified by the bootstrap that allows me to customize -->
             <div class="jumbotron">
                 <h1>Binary Calculator</h1>
                 <div id="output"></div>
@@ -37,9 +32,9 @@ author: Amay Advani
                                     onclick="input('1')">
                                       1</button>
                             <button type="button" 
-                                    class="btn btn-warning float-middle" 
+                                    class="btn btn-warning float" 
                                     onclick="backspace()">
-                                      Backspace</button>
+                                      backspace</button>
                         </div>
                     </div>
                     <div class="row mt-2">
@@ -62,7 +57,7 @@ author: Amay Advani
                         <div class="col-12">
                             <button type="button" 
                                     class="btn btn-success" 
-                                    onclick="calculate()">Calculate</button>
+                                    onclick="calculate()">calculate!!!</button>
                                     </div>
                     </div>
                 </div>
@@ -81,3 +76,49 @@ author: Amay Advani
                 crossorigin="anonymous"></script>
     </body>
 </html>
+
+<!--for this css i had to ask my classmates how to change the backgroup using the !important function-->
+
+<style>
+    
+    h1{
+        background-color: grey;
+        min-width: 120px;
+        border: 2px solid black;
+    }
+
+    .jumbotron{
+      width : 70%;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      height: 400px; 
+      background-color: lightblue !important;
+    }
+  
+    #output{
+      border: 2px solid black;
+      min-height: 60px;
+      text-align: right;
+      font-weight: bold;
+      font-size: 20px;
+      background-color: darkgrey !important;
+    }
+  
+    .btn{
+      min-width: 120px;
+      border: 2px solid black;
+      background-color: lightgray !important;
+    }
+    container mt-2{
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+</style>
+
+ 
