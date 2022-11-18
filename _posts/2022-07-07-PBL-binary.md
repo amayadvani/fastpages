@@ -81,10 +81,11 @@ permalink: /frontend/binary
         // Decimal conversion
         document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString();
     
-    let text2 = document.getElementById('hexadecimal').innerHTML; 
+    let test2 = document.getElementById('hexadecimal').innerHTML; 
     let test1 = "#" // added # to make rgb background
-    let result = test1.concat(text2); // concatination to add 2 strings together
+    let result = test1.concat(test2); // concatination to add 2 strings together
     document.body.style.backgroundColor = result;
+
     }
     //
     function decimal_2_base(decimal, base) {
