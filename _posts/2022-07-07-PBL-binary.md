@@ -1,20 +1,4 @@
----
-title: Binary Math
-layout: default
-description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
-permalink: /frontend/binary
-image: /images/binary.png
-categories: [3.B, 3.C, C4.4]
-tags: [html, liquid, javascript]
-week: 13
-type: pbl
----
-
-<!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable -->
-<!-- Hack 2: change to 24 bits and add a color code and display color when 24 bits, think about display on this one -->
-<!-- Hack 3: do your own thing -->
-
-{% assign BITS = 8 %}
+{% assign BITS = 24 %}
 
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
@@ -37,7 +21,6 @@ type: pbl
                 <td id="octal">0</td>
                 <td id="hexadecimal">0</td>
                 <td id="decimal">0</td>
-                <td id="bits">{{BITS}}</td>
                 <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
             </tr>
             </table>
@@ -90,6 +73,11 @@ type: pbl
         document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
         // Decimal conversion
         document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString();
+    
+    let text2 = document.getElementById('hexadecimal').innerHTML; 
+    let test1 = "#" // added # to make rgb background
+    let result = test1.concat(text2); // concatination to add 2 strings together
+    document.body.style.backgroundColor = result;
     }
     //
     function decimal_2_base(decimal, base) {
@@ -108,6 +96,8 @@ type: pbl
         }
         return conversion;
     }
+
+
 
     // toggle selected bit and recalculate
     function toggleBit(i) {
@@ -157,5 +147,3 @@ type: pbl
         }
     }
 </script>
-
-
