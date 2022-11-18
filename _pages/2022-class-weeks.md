@@ -38,6 +38,18 @@ title: Class Weeks
     <th colspan="10">{{site.cont}}</th>
   </tr>
   <tr>
+    <th>13</th>
+    <td><a href="https://amayadvani.github.io/fastpages/2022/11/16/toolscheck2.html">Tool Check 2</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/2022/11/17/bc.html">Binary Calculator</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/frontend/binary">Binary Hacks</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/2048">2048</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
     <th>12</th>
     <td><a href="https://amayadvani.github.io/fastpages/2022/11/08/final.html">Trimester 1 Final Reflection</a></td>
     <td><a href="https://vivianknee.github.io/VaseProject/markdown/2022/10/23/notm.html">NATM</a></td>
