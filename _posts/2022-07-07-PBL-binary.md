@@ -3,6 +3,7 @@ title: Binary Hacks
 layout: default
 description: HTML and JavaScript.
 author: Amay Advani
+permalink: /frontend/binary
 ---
 {% assign BITS = 24 %}
 
