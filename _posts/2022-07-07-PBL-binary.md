@@ -41,6 +41,14 @@ type: pbl
             </tr>
             </table>
         </div>
+          <style type="text/css">
+        #colorBox {
+            margin-top: 0.5rem;
+            width: 100px;
+            height: 100px;
+        }
+            </style>
+        <div id="colorBox"></div>
         <div class="col-12">
             {% comment %}Liquid for loop includes last number, thus the Minus{% endcomment %}
             {% assign bits = BITS | minus: 1 %} 
@@ -92,7 +100,8 @@ type: pbl
         let text2 = document.getElementById('hexadecimal').innerHTML;
         let text1 = "#";
         let result = text1.concat(text2);
-        document.body.style.backgroundColor = result;
+      //  document.body.style.backgroundColor = result;
+        document.getElementById('colorBox').style.backgroundColor = result;
     }
     //
     function decimal_2_base(decimal, base) {
