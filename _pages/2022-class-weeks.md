@@ -47,7 +47,6 @@ title: Class Weeks
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <th>12</th>
