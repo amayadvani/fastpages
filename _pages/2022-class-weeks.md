@@ -46,15 +46,12 @@ title: Class Weeks
     <td><a href="https://github.com/amayadvani/fastpages/issues/11">pre turkey review ticket</a></td>
     <td></td>
     <td></td>
-    <td></td>
   </tr>
   <tr>
     <th>12</th>
     <td><a href="https://amayadvani.github.io/fastpages/2022/11/08/final.html">Trimester 1 Final Reflection</a></td>
     <td><a href="https://vivianknee.github.io/VaseProject/markdown/2022/10/23/notm.html">NATM</a></td>
     <td><a href="https://amayadvani.github.io/fastpages/_pages/2022-class-weeks.html">Class Weeks Table</a></td>
-    <td></td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -69,16 +66,12 @@ title: Class Weeks
     <td><a href="https://amayadvani.github.io/fastpages/2022/11/08/final.html">Trimester 1 Final Reflection</a></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
   </tr>
   <tr>
     <th>10</th>
     <td><a href="https://docs.google.com/document/d/1RX6tM69iN7ROI08JDabsySudZdk-A-aL1VDg5w9rRGk/edit">Team Scrumboard</a></td>
     <td><a href="https://vivianknee.github.io/VaseProject/2022/10/31/VASE-get-diagnosis.html"> Diagnosis Prototype</a></td>
     <td><a href="https://github.com/amay.advani/VASE/graphs/contributors">Commit History</a></td>
-    <td></td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -93,8 +86,6 @@ title: Class Weeks
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
   </tr>
   <tr>
     <th>8</th>
@@ -105,8 +96,6 @@ title: Class Weeks
     <td><a href="https://lawnmowers.nighthawkcodescrums.gq/GroupProjectPlan/">Group Plan</a></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
   </tr>
   <tr>
     <th>7</th>
@@ -114,8 +103,6 @@ title: Class Weeks
     <td><a href="https://amayadvani.github.io/fastpages/2022/10/09/AP-notes.html">College Board Notes and Quiz</a></td>
     <td><a href="https://amayadvani.github.io/fastpages/rapidapi/">Diagnosis API</a></td>
     <td><a href="https://amayadvani.github.io/fastpages/markdown/week5/2022/09/25/big-idea.html">Group Plan</a></td>
-    <td></td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -129,8 +116,6 @@ title: Class Weeks
     <td><a href="http://10.8.133.148/scrum/">Group Plan</a></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
   </tr>
   <tr>
     <th>5</th>
@@ -141,16 +126,12 @@ title: Class Weeks
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
   </tr>
   <tr>
     <th>4</th>
     <td><a href="https://amayadvani.github.io/fastpages/markdown/week4/2022/09/19/collaboration-notes.html">Collaboration (Unit 1.1)</a></td>
     <td><a href="http://127.0.0.1:4000/fastpages/">Local Fastpages Server (only on my computer)</a></td>
     <td><a href="http://127.0.0.1:5000/">Flask Python Server (only on my computer)</a></td>
-    <td></td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -165,17 +146,12 @@ title: Class Weeks
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
-    <td></td>
-    
   </tr>
   <tr>
     <th>2</th>
     <td><a href="https://amayadvani.github.io/fastpages/jupyter/week3/2022/09/11/python-extra-quiz.html">Python quiz</a></td>
     <td><a href="">Class Weeks</a></td>
     <td><a href="https://github.com/amayadvani/fastpages/issues/5">Week two review ticket</a></td>
-    <td></td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -190,16 +166,12 @@ title: Class Weeks
     <td><a href="https://amayadvani.github.io/fastpages/_pages/2022-class-weeks.html">Class Weeks</a></td>
     <td><a href="https://amayadvani.github.io/fastpages/jupyter/week1/2022/08/28/tool_check.html">Homepage Customization</a></td>
     <td></td>
-    <td></td>
-    <td></td>
   </tr>
   <tr>
     <th>0</th>
     <td><a href="https://amay.advani.github.io/fastpages/about/">About Me</a></td>
     <td><a href="https://amayadvani.github.io/fastpages/markdown/week1/2022/08/25/marketing-econ.html">Marketing Econ post</a></td>
     <td><a href="https://amay.advani.github.io/fastpages/jupyter/week0/2022/08/21/firstjupyternotebook.html">Jupyter Notebook</a></td>
-    <td></td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
