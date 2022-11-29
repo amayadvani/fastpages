@@ -1,5 +1,5 @@
 ---
-title: All lesson Notes
+title: All Lesson Notes
 author : Amay Advani
 layout: default
 description: n/a
