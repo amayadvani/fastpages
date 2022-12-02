@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Week 14 Algorithm Hacks",
-            "content": "Fibonacci Sequence Python Algorithm . def fib(num): # define function parameter = num if num == 0 or num == 1: # if num is equal to 1 or 0, then just return them return num return fib(num - 1) + fib(num - 2) # else add the numbers 1 and 2 before the original one for i in range(20): #loop 20 times print(fib(i)) . 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 . . const = num function(fib){ if(num === 0 || num === 1){ return num return fib(num - 1) + fib(num - 2) } } for(i=0; i,&lt;num; i++){ print(fib(i)) } . Input In [11] function(fib){ ^ SyntaxError: invalid syntax .",
+            "content": "Fibonacci Sequence Python Algorithm . def fib(num): # define function parameter = num if num == 0 or num == 1: # if num is equal to 1 or 0, then just return them return num return fib(num - 1) + fib(num - 2) # else add the numbers 1 and 2 before the original one for i in range(20): #loop 20 times print(fib(i)) . 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 . . function fib(num){ if(num === 0 || num === 1){ return num } return fib(num - 1) + fib(num - 2) } for(i=0; i&lt;20; i++){ console.log(fib(i)) } . 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 .",
             "url": "https://amayadvani.github.io/fastpages/2022/12/01/fibancci.html",
             "relUrl": "/2022/12/01/fibancci.html",
             "date": " • Dec 1, 2022"
