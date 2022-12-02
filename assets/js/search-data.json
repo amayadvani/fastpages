@@ -2,7 +2,7 @@
   
     
         "post0": {
-            "title": "Palindrome Algorithm",
+            "title": "Truth Tables",
             "content": "let text2 = &quot;&quot;; let data2 = [ [0, 0], [0, 1], [1, 0], [1, 1], ]; text2 += &quot;AND n&quot;; for (let i = 0; i &lt; data2.length; i++) { let el1 = data2[i][0]; let el2 = data2[i][1]; text2 += el1 + &quot; &amp; &quot; + el2 + &quot; = &quot;; text2 += (el1 &amp; el2).toString(); text2 += &quot; n&quot;; } text2 += &quot;OR n&quot;; for (let i = 0; i &lt; data2.length; i++) { let el1 = data2[i][0]; let el2 = data2[i][1]; text2 += el1 + &quot; | &quot; + el2 + &quot; = &quot;; text2 += (el1 | el2).toString(); text2 += &quot; n&quot;; } text2 += &quot;XOR n&quot;; for (let i = 0; i &lt; data2.length; i++) { let el1 = data2[i][0]; let el2 = data2[i][1]; text2 += el1 + &quot; ^ &quot; + el2 + &quot; = &quot;; text2 += (el1 ^ el2).toString(); text2 += &quot; n&quot;; } let data3 = [1,0] text2 += &quot;NOT n&quot;; for (let i = 0; i &lt; data2.length; i++) { text2 += &quot;~&quot; + data3[i] + &quot;=&quot; + ~data3[i] } console.log(text2); . AND 0 &amp; 0 = 0 0 &amp; 1 = 0 1 &amp; 0 = 0 1 &amp; 1 = 1 OR 0 | 0 = 0 0 | 1 = 1 1 | 0 = 1 1 | 1 = 1 XOR 0 ^ 0 = 0 0 ^ 1 = 1 1 ^ 0 = 1 1 ^ 1 = 0 NOT ~1=false~0=true~undefined=true~undefined=true .",
             "url": "https://amayadvani.github.io/fastpages/2022/12/01/palindrome.html",
             "relUrl": "/2022/12/01/palindrome.html",
