@@ -171,8 +171,8 @@ window.onload = wrap_img;
 <span class="p">}</span>
 <span class="kd">let</span> <span class="nx">data3</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="mf">0</span><span class="p">]</span>
 <span class="nx">text2</span> <span class="o">+=</span> <span class="s2">"NOT\n"</span><span class="p">;</span>
-<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">data2</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">text2</span> <span class="o">+=</span> <span class="s2">"~"</span> <span class="o">+</span> <span class="nx">data3</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">"="</span> <span class="o">+</span> <span class="o">~</span><span class="nx">data3</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">data3</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">text2</span> <span class="o">+=</span> <span class="s2">"~"</span> <span class="o">+</span> <span class="nx">data3</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">"="</span> <span class="o">+</span> <span class="o">~</span><span class="nx">data3</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">"\n"</span>
 <span class="p">}</span>
 
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">text2</span><span class="p">);</span>
@@ -204,7 +204,9 @@ XOR
 1 ^ 0 = 1
 1 ^ 1 = 0
 NOT
-~1=false~0=true~undefined=true~undefined=true
+~1=-2
+~0=-1
+
 </pre>
 </div>
 </div>
