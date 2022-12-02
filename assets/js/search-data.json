@@ -36,7 +36,7 @@
     
         ,"post3": {
             "title": "Unit 3.3-3.4 Hacks",
-            "content": "Hack 1 . Sequencing: 1,2,5 . Selection: 3 . Iteration: 4 . Hacks 2 . num1 = 5 num2 = num1 * 3 num3 = num2 / num1 * (9 % 2) * 4 result = (num3 % num1 + num2) % num3 * 3 / 5 print(result) . 3.0 . Cross Word Puzzle . Down . 1) Iteration 2) Selection . Across . 3) Sequence .",
+            "content": "Hack 1 . Sequencing: 1,2,5 . Selection: 3 . Iteration: 4 . Hacks 2 . num1 = 5 num2 = num1 * 3 num3 = num2 / num1 * (9 % 2) * 4 result = (num3 % num1 + num2) % num3 * 3 / 5 print(result) . 3.0 . Cross Word Puzzle . Down . 1) Iteration 2) Selection . Across . 3) Sequence . Hack 4! . Quiz .",
             "url": "https://amayadvani.github.io/fastpages/3334_hacks",
             "relUrl": "/3334_hacks",
             "date": " • Nov 29, 2022"
