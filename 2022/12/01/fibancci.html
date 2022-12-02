@@ -143,13 +143,13 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">num</span><span class="p">):</span> <span class="c1"># define function parameter = num</span>
-   <span class="k">if</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># if num is equal to 1 or 0, then just return them</span>
-      <span class="k">return</span> <span class="n">num</span>
-   <span class="k">return</span> <span class="n">fib</span><span class="p">(</span><span class="n">num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib</span><span class="p">(</span><span class="n">num</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># else add the numbers 1 and 2 before the original one</span>
+<div class=" highlight hl-javascript"><pre><span></span><span class="nx">def</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span><span class="o">:</span> <span class="err">#</span> <span class="nx">define</span> <span class="kd">function</span> <span class="nx">parameter</span> <span class="o">=</span> <span class="nx">num</span>
+   <span class="k">if</span> <span class="nx">num</span> <span class="o">==</span> <span class="mf">0</span> <span class="nx">or</span> <span class="nx">num</span> <span class="o">==</span> <span class="mf">1</span><span class="o">:</span> <span class="err">#</span> <span class="k">if</span> <span class="nx">num</span> <span class="nx">is</span> <span class="nx">equal</span> <span class="nx">to</span> <span class="mf">1</span> <span class="nx">or</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">then</span> <span class="nx">just</span> <span class="k">return</span> <span class="nx">them</span>
+      <span class="k">return</span> <span class="nx">num</span>
+   <span class="k">return</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">num</span> <span class="o">-</span> <span class="mf">1</span><span class="p">)</span> <span class="o">+</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">num</span> <span class="o">-</span> <span class="mf">2</span><span class="p">)</span>  <span class="err">#</span> <span class="k">else</span> <span class="nx">add</span> <span class="nx">the</span> <span class="nx">numbers</span> <span class="mf">1</span> <span class="nx">and</span> <span class="mf">2</span> <span class="nx">before</span> <span class="nx">the</span> <span class="nx">original</span> <span class="nx">one</span>
 
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">):</span> <span class="c1">#loop 20 times </span>
-   <span class="nb">print</span><span class="p">(</span><span class="n">fib</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+<span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">range</span><span class="p">(</span><span class="mf">20</span><span class="p">)</span><span class="o">:</span> <span class="err">#</span><span class="nx">loop</span> <span class="mf">20</span> <span class="nx">times</span> 
+   <span class="nx">print</span><span class="p">(</span><span class="nx">fib</span><span class="p">(</span><span class="nx">i</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -220,14 +220,14 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">function</span> <span class="n">fib</span><span class="p">(</span><span class="n">num</span><span class="p">){</span>
-   <span class="k">if</span><span class="p">(</span><span class="n">num</span> <span class="o">===</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">num</span> <span class="o">===</span> <span class="mi">1</span><span class="p">){</span>
-      <span class="k">return</span> <span class="n">num</span>
+<div class=" highlight hl-javascript"><pre><span></span><span class="kd">function</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">num</span><span class="p">){</span>
+   <span class="k">if</span><span class="p">(</span><span class="nx">num</span> <span class="o">===</span> <span class="mf">0</span> <span class="o">||</span> <span class="nx">num</span> <span class="o">===</span> <span class="mf">1</span><span class="p">){</span>
+      <span class="k">return</span> <span class="nx">num</span>
    <span class="p">}</span>
-   <span class="k">return</span> <span class="n">fib</span><span class="p">(</span><span class="n">num</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib</span><span class="p">(</span><span class="n">num</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+   <span class="k">return</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">num</span> <span class="o">-</span> <span class="mf">1</span><span class="p">)</span> <span class="o">+</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">num</span> <span class="o">-</span> <span class="mf">2</span><span class="p">)</span>
 <span class="p">}</span>
-<span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">20</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-   <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">fib</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+<span class="k">for</span><span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mf">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="mf">20</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fib</span><span class="p">(</span><span class="nx">i</span><span class="p">))</span>
 <span class="p">}</span>
 </pre></div>
 
