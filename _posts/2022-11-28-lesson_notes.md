@@ -5,7 +5,7 @@ layout: default
 description: n/a
 ---
 
-## Monday 11/28
+### Monday 11/28
 
 **Essential Knowledge**
 
@@ -35,7 +35,7 @@ description: n/a
 
 - The list is in order
 
-## Tuesday 11/29
+### Tuesday 11/29
 
 **Lesson 3.3.1**
 
@@ -59,6 +59,52 @@ Remainder:
 
 The order of operations for division and multiplication is the same for operators with MOD. The syntax of MOD in Python and the majority of computer languages is %
 
+### Friday 12/2
 
+**Lesson 3.5**
+
+- a Boolean is a denoting a system of algebraic notation used to represent logical propositions, especially in computing and electronics.
+
+- Testing if two numbers or variables are equal is a common example.
+
+Relational Operators
+
+- NOT, it displays the opposite of whatever the data is. Mainly used for true/false, and does not effect the variable.
+
+- AND, used to evaluate two conditions together and determine if both conditions are met
+
+- OR, when using or the function only looks to see if one of the conditions is met then will
+
+**Lesson 3.7** 
+
+- Nested conditional statements consist of conditional statements within conditional statements
+
+- Can be used for a varying amount of "else if statements." The first if statement can represent if two conditions are true. The first else if can represent if only one or the other is true. The last else if represents if neither of the conditions are true.
+
+### Monday 12/5
+
+**Lesson 3.8**
+
+- Iteration: a repeating portion of an algorithm, repeats a specified number of times or until a given condition is met
+
+- use stopping conditions to stop an iteration if a condition is already met
+
+- Iteration Statement - cause statements to be executed zero or more times, subject to some loop-termination criteria
+
+**Lesson 3.3.8**
+
+- The purpose of this code is to find the sum of all the even numbers between and any number of your choosing. The integer input asks for the minimum and maximum value. 
+
+**Lesson 3.10**
+
+- Traversing Lists: where all elements in the list are accessed, or a partial traversal, where only a portion of elements are accessed (can be a complete traversal)
+
+- List procedures are implemented in accordance with the syntax rules of the programming language
+
+**Lesson 3.10.1**
+
+- Since CS is taught in different languages the pseudocode represents fundamental programming concepts.
+
+- A given element of a list can be evaluated using index, [ ]
 
 
