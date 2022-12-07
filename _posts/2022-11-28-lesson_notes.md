@@ -59,7 +59,7 @@ Remainder:
 
 The order of operations for division and multiplication is the same for operators with MOD. The syntax of MOD in Python and the majority of computer languages is %
 
-### Friday 12/2
+### Friday 12/02
 
 **Lesson 3.5**
 
@@ -81,7 +81,7 @@ Relational Operators
 
 - Can be used for a varying amount of "else if statements." The first if statement can represent if two conditions are true. The first else if can represent if only one or the other is true. The last else if represents if neither of the conditions are true.
 
-### Monday 12/5
+### Monday 12/05
 
 **Lesson 3.8**
 
@@ -103,8 +103,52 @@ Relational Operators
 
 **Lesson 3.10.1**
 
-- Since CS is taught in different languages the pseudocode represents fundamental programming concepts.
+- Since CS is taught in different languages the pseudo code represents fundamental programming concepts.
 
 - A given element of a list can be evaluated using index, [ ]
 
+### Tuesday 12/06
 
+**Lesson 3.9.1**
+
+- Main Idea 1: Algorithms can be written in different ways and still do the same thing
+
+- However, Algorithms that look similar might not always have the same result
+
+- Different algorithms can be used to solve the same problem
+
+- When collaborating or working on group projects, two people might come up with two different ways to solve a problem, and that happens a lot.
+
+- Nested Conditionals as Boolean expressions
+
+**Lesson 3.9.2**
+
+- Developing Algorithms
+
+- When creating an algorithm, its good to outline its process before coding
+
+- This ensures that it is sequenced correctly
+
+- You should represent the algorithm using a flowchart or natural language
+
+- Visualization can help you better see the flow of the whole algorithm
+
+- This may allow for the coding process to be more efficient and effective
+
+**Lesson 3.9.3**
+
+- Knowing existing algorithms can help construct new ones
+
+- simple existing algorithms can include
+
+- determining min or max of two or more numbers
+
+- computing the sum or average
+
+- identifying if an integer is even or odd
+
+**Lesson 3.11**
+
+- Middle number in an index or list is found by taking the highest index number plus the lowest index number and divide by 2
+
+- Binary trees are used to showcase this
