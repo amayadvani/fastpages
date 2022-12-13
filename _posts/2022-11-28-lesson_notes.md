@@ -153,6 +153,22 @@ Relational Operators
 
 - Binary trees are used to showcase this
 
+
+### Tuesday 12/13
+
+**Lesson 3.16**
+
+- simulation : A simulation is an imitation of a situation or process
+
+also known as a virtual experiment 
+
+- Experiment(vs simulation) definition: procedure undertaken to make a discovery, test a hypothesis, or demonstrate a known fact
+
+- simulations are safer and cheaper, although experiments are more accurate. 
+
+- four corners : an example of a simulation and experiment = the game of 4 corners
+
+
 ### Mort Vocab 
 
 Unit 2… Binary/Data Terms
