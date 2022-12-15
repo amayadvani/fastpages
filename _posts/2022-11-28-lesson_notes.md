@@ -153,7 +153,17 @@ Relational Operators
 
 - Binary trees are used to showcase this
 
+### Monday 12/12
 
+objective: To be able to select appropriate libraries and/or existing code to use in the creation of new programs.
+
+- A library is a collection of code from an external source that can be used to add functionality to a program.
+
+- The import function imports a python library, which allows the user to code using pre made functions such as pow, sqrt, or even factorial.
+
+- Some other libraries that the user can import include
+
+- 
 ### Tuesday 12/13
 
 **Lesson 3.16**
