@@ -5,6 +5,8 @@ layout: default
 description: Organized Hacks
 ---
 
+# All Hacks 
+
 | Lesson | Grade | hacks |
 |-|-|-|
 | 3.1 - 3.2| 0.9 | [hacks](https://amayadvani.github.io/fastpages/2022/12/01/3132hacks.html) |
