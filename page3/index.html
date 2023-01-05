@@ -76,34 +76,68 @@ window.onload = wrap_img;
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
-    .parallax {
+    
+    h1 {color:green (51, 183, 51) (0, 0, 0); font-size: 50px;}
+    h3 {color:green ; font-size: 40px;}
+    h2 {color:green (0, 0, 0); font-size: 30px;}
 
-        background-image: url("/fastpages/images/spiderman4.png");
-        min-height: 500px; 
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 400px 400px;
-      }
-    .parallax2 {
-        background-image: url("/fastpages/images/logo_size.jpg");
-        min-height: 100px; 
-        background-attachment: fixed;
-        background-position: 80% 25%;
-        background-repeat: no-repeat;
-        background-size: 138px 42px;
-      }
-    h1 {color:white (0, 0, 0); font-family: Garamond, serif; font-size: 50px;}
-    h3 {color:white ; font-family: Garamond, serif; font-size: 40px;}
-    h2 {color:white (0, 0, 0); font-family: Garamond, serif; font-size: 30px;}
+    .word {
+  margin: auto;
+  color: green;
+}
 </style>
 </head>
 <body style="background-image: linear-gradient(to right, rgb(128, 0, 0) , rgb(130, 130, 255));">
-    <h1 align="center">
-        <b>
-            Welcome to Amay's FastPages site!
-        </b>
+    <h1 class="word" align="center">
     </h1>
+    <script>
+        var words = ["Welcome to Amay's FastPages site!"]
+    part,
+    i = 0,
+    offset = 0,
+    len = words.length,
+    forwards = true,
+    skip_count = 0,
+    skip_delay = 15,
+    speed = 70;
+var wordflick = function () {
+  setInterval(function () {
+    if (forwards) {
+      if (offset >= words[i].length) {
+        ++skip_count;
+        if (skip_count == skip_delay) {
+          forwards = false;
+          skip_count = 0;
+        }
+      }
+    }
+    else {
+      if (offset == 0) {
+        forwards = true;
+        i++;
+        offset = 0;
+        if (i >= len) {
+          i = 0;
+        }
+      }
+    }
+    part = words[i].substr(0, offset);
+    if (skip_count == 0) {
+      if (forwards) {
+        offset++;
+      }
+      else {
+        offset--;
+      }
+    }
+    $('.word').text(part);
+  },speed);
+};
+
+$(document).ready(function () {
+  wordflick();
+});
+    </script>
     <div class="parallax"></div>
     <h2>
    </h2>
@@ -218,7 +252,7 @@ window.onload = wrap_img;
     <div class="footer-col-wrapper">
       <div class="footer-col">
         <p class="feed-subscribe">
-          <a href="/fastpages/feed.xml">
+          <a href="https://amayadvani.github.io/fastpages/feed.xml">
             <svg class="svg-icon orange">
               <use xlink:href="/fastpages/assets/minima-social-icons.svg#rss"></use>
             </svg><span>Subscribe</span>
