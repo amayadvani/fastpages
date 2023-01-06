@@ -518,4 +518,8 @@ canvas { filter: invert(100%); }
 
 li .post-meta-description { color: rgba(0, 128, 0, 0.69) !important; }
 
+a { color: green !important; }
+
+* { font-family: 'Anybody', cursive !important; }
+
 /*# sourceMappingURL=style.css.map */
