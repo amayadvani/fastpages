@@ -86,13 +86,19 @@ window.onload = wrap_img;
 </style>
 </head>
 <body style="background-color: black">
-    <h1 align="center">
-        <b>
-            Welcome to Amay's FastPages site!
-        </b>
+    <h1 id="word" align="center">
       </h1>
-    <h2>
-   </h2>
+      <script>
+        let word = document.getElementById("word")
+        let delay = 0;
+        let header = "Welcome to Amay's FastPages"
+        for (var i = 0; i < head.length; i++){
+          setTimeout(function(){
+            word.innerHTML += header.charAt(i);
+          }, delay)
+          delay += 500
+        }
+      </script>
     <h3>
         <b>
             Posts  
