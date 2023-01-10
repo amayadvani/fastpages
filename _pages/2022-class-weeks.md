@@ -37,6 +37,16 @@ title: Class Weeks
   <!-- In config.yml -->
     <th colspan="10">{{site.cont}}</th>
   </tr>
+  <tr>
+    <th>15</th>
+    <td><a href="https://amayadvani.github.io/fastpages/2022/12/06/39and311.html">3.9 - 3.11 </a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/2022/12/09/monkeynotes.html">Notes with Vocab</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/2022/12/12/314315hacks.html">3.14 - 3.15</a></td>
+    <td><a href="https://amayadvani.github.io/fastpages/2022/11/28/lesson_notes.html">All Lesson Notes</a></td>
+    <td><a href="https://github.com/amayadvani/fastpages/issues/13"> week 15 review ticket</a></td>
+    <td></td>
+    <td></td>
+  </tr>
    <tr>
     <th>14</th>
     <td><a href="https://amayadvani.github.io/fastpages/2022/12/01/palindrome.html">Truth Table</a></td>
