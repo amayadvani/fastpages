@@ -1,0 +1,36 @@
+{
+   padding: 0;
+   margin: 0;
+}
+#game{
+   width: 700px;
+   height: 300px;
+   border: 10px solid white;
+   background-color: lightgrey; 
+}
+#chara{
+   width:50px;
+   height:50px;
+   background-color: green;
+   border-radius: 50%;
+   display: incline-block;
+   position: relative;
+   top: 250px;
+   margin: 10px;
+}
+#obstacle{
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   border-bottom: 30px solid darkred;
+   border-top: 30px solid transparent;
+   display: inline-block;
+   position: relative;
+   top: 220px;
+   left: 670px;
+   margin: 10px
+   animation: obstacle ls;
+}
+@keyframes obstacle{
+   from {left: 670px;}
+   to {left: -60px;}
+}

@@ -43,7 +43,7 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The decimal value of the number is 5
+<pre>The decimal value of the number is 4
 </pre>
 </div>
 </div>
