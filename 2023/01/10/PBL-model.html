@@ -590,7 +590,7 @@ Test 3: generate JSON
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
 
 <span class="k">class</span> <span class="nc">Notebook</span><span class="p">:</span>
-   <span class="k">def</span> <span class="nf">_init_</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">calc</span><span class="p">,</span> <span class="n">bio</span><span class="p">,</span> <span class="n">poe</span><span class="p">,</span> <span class="n">csp</span><span class="p">,</span> <span class="n">ush</span><span class="p">):</span>
+   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">calc</span><span class="p">,</span> <span class="n">bio</span><span class="p">,</span> <span class="n">poe</span><span class="p">,</span> <span class="n">csp</span><span class="p">,</span> <span class="n">ush</span><span class="p">):</span>
       <span class="bp">self</span><span class="o">.</span><span class="n">_calc</span> <span class="o">=</span> <span class="n">calc</span>
       <span class="bp">self</span><span class="o">.</span><span class="n">_bio</span> <span class="o">=</span> <span class="n">bio</span>
       <span class="bp">self</span><span class="o">.</span><span class="n">_poe</span> <span class="o">=</span> <span class="n">poe</span>
@@ -648,10 +648,10 @@ Test 3: generate JSON
       <span class="p">}</span>
       <span class="k">return</span> <span class="n">dic</span>
 
-   <span class="k">def</span> <span class="nf">_str_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-      <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dictionary</span><span class="p">)</span>
+   <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dictionary</span><span class="p">)</span>
 
-   <span class="k">def</span> <span class="nf">_repr_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+   <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
       <span class="k">return</span> <span class="s1">'Notebook(calc=</span><span class="si">{self._calc}</span><span class="s1">, bio=</span><span class="si">{self._bio}</span><span class="s1">, poe=</span><span class="si">{self._poe}</span><span class="s1">, csp=</span><span class="si">{self._csp}</span><span class="s1">, ush=</span><span class="si">{self._ush}</span><span class="s1">)'</span>
 
 <span class="n">Notebook1</span> <span class="o">=</span> <span class="n">Notebook</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
@@ -661,7 +661,7 @@ Test 3: generate JSON
 
 <span class="n">notebooks</span> <span class="o">=</span> <span class="p">[</span><span class="n">Notebook1</span><span class="p">,</span> <span class="n">Notebook2</span><span class="p">]</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="nb">str</span><span class="p">([</span><span class="n">Notebook</span><span class="o">.</span><span class="n">_dic_</span> <span class="k">for</span> <span class="n">notebook</span> <span class="ow">in</span> <span class="n">notebooks</span><span class="p">])))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="nb">str</span><span class="p">([</span><span class="n">notebook</span> <span class="k">for</span> <span class="n">notebook</span> <span class="ow">in</span> <span class="n">notebooks</span><span class="p">])))</span>
 </pre></div>
 
     </div>
@@ -673,18 +673,11 @@ Test 3: generate JSON
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/amaya/vscode/vscode/fastpages/_notebooks/2023-01-10-PBL-model.ipynb Cell 8</span> in <span class="ansi-cyan-fg">&lt;cell line: 68&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/amaya/vscode/vscode/fastpages/_notebooks/2023-01-10-PBL-model.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=64'&gt;65&lt;/a&gt;</span>    def _repr_(self):
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/amaya/vscode/vscode/fastpages/_notebooks/2023-01-10-PBL-model.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=65'&gt;66&lt;/a&gt;</span>       return 'Notebook(calc={self._calc}, bio={self._bio}, poe={self._poe}, csp={self._csp}, ush={self._ush})'
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/amaya/vscode/vscode/fastpages/_notebooks/2023-01-10-PBL-model.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=67'&gt;68&lt;/a&gt;</span> Notebook1 = Notebook(1,2,3,4,5)
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/amaya/vscode/vscode/fastpages/_notebooks/2023-01-10-PBL-model.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=68'&gt;69&lt;/a&gt;</span> Notebook2 = Notebook(6,7,8,9,10)
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/amaya/vscode/vscode/fastpages/_notebooks/2023-01-10-PBL-model.ipynb#X11sdnNjb2RlLXJlbW90ZQ%3D%3D?line=69'&gt;70&lt;/a&gt;</span> print(Notebook1)
-
-<span class="ansi-red-fg">TypeError</span>: Notebook() takes no arguments</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{"calc": 3, "bio": 2, "poe": 3, "csp": 4, "ush": 5}
+{"calc": 8, "bio": 7, "poe": 8, "csp": 9, "ush": 10}
+"[Notebook(calc={self._calc}, bio={self._bio}, poe={self._poe}, csp={self._csp}, ush={self._ush}), Notebook(calc={self._calc}, bio={self._bio}, poe={self._poe}, csp={self._csp}, ush={self._ush})]"
+</pre>
 </div>
 </div>
 
