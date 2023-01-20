@@ -103,7 +103,7 @@
     <div class="game" id="game">
       <div class="chara" id="chara"></div>
       <div class="obstacle obstacle-animate" id="obstacle"></div>
-      <div class="obstacle2 obstacle-animate" id="obstacle2"></div>
+      <div class="obstacle2 obstacle-animate hidden" id="obstacle2"></div>
     </div>
     <div class="score" id="score">Score</div>
     <button onclick="pause()" class="button" id="pause">Pause!</button>
@@ -147,7 +147,11 @@
       obstacle.classList.add("obstacle-animate");
     }
     if (score % 2 !== 0) {
-      
+      obstacle.classList.add("hidden");
+      obstacle2.classList.remove("hidden");
+    } else{
+      obstacle.classList.remove("hidden");
+      obstacle2.classList.add("hidden");
     }
   </script>
 </html>

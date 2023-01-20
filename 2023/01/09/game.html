@@ -136,7 +136,7 @@ window.onload = wrap_img;
         border-top: 30px solid transparent;
         display: inline-block;
         position: relative;
-        top: 130px;
+        top: 140px;
         left: 610px;
         margin: 10px;
       }
@@ -192,7 +192,6 @@ window.onload = wrap_img;
     var obstacle = document.getElementById("obstacle");
     var obstacle2 = document.getElementById("obstacle2");
     var score = 0;
-
     function jump(e) {
       console.log(e);
       score = score + 1;
@@ -213,7 +212,6 @@ window.onload = wrap_img;
       }
     }
     setInterval(check, 100);
-
     function pause() {
       obstacle.classList.remove("obstacle-animate");
     }
@@ -221,7 +219,11 @@ window.onload = wrap_img;
       obstacle.classList.add("obstacle-animate");
     }
     if (score % 2 !== 0) {
-      
+      obstacle.classList.add("hidden");
+      obstacle2.classList.remove("hidden");
+    } else{
+      obstacle.classList.remove("hidden");
+      obstacle2.classList.add("hidden");
     }
   </script>
 </html>
