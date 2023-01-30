@@ -5,50 +5,50 @@ layout: default
 description: week 20
 ---
 
-## Incorrect Question
+# Incorrect Questions
 
-# Q1 initial values that yield incorrect value of max
+## Q1 initial values that yield incorrect value of max
 
 Wrong: x = 1, y = 3, z = 2
 
 Right: x = 3, y = 2, z = 1 
 
 
-# Q8 Laptops being borrowed from a school library
+## Q8 Laptops being borrowed from a school library
 
 Wrong: The quotient when borrows is divided by returns is greater than 1.
 
 Right: The difference between borrows and returns is zero.
 
 
-# Q10 Boolean expressions equivalent to num greater than or equal to 15
+## Q10 Boolean expressions equivalent to num greater than or equal to 15
 
 Wrong: ( num greater than 15) and (num equals 15)
 
 Right: Not (num less than 15)
 
 
-# Q13 old enough to drive but not to vote
+## Q13 old enough to drive but not to vote
 
 Wrong: II only
 
 Right: II and III only
 
 
-# Q14 The figure below shows a circuit composed of tw...
+## Q14 The figure below shows a circuit composed of tw...
 
 Wrong: Input A can be either true or false.
 
 Right: Input A Must be true
 
 
-# Q15 Robot in maze series of ifs
+## Q15 Robot in maze series of ifs
 
 Wrong: C
 
 True: D
 
-# Reflection
+## Reflection
 
    1) Initial values refer to the starting point or seed values used in a computation or algorithm, such as in optimization problems or machine learning models. If the initial values used in a computation or algorithm yield an incorrect value of the maximum, it could be due to a number of factors.
 
