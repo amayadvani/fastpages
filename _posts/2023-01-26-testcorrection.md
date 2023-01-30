@@ -5,7 +5,7 @@ layout: default
 description: week 20
 ---
 
-# Incorrect Questions
+# Incorrect Questions (44/50)
 
 ## Q1 initial values that yield incorrect value of max
 
