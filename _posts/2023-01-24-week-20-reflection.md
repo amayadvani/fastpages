@@ -5,9 +5,9 @@ layout: default
 description: week 20
 ---
 
-## 5.1 and 5.2 Reflection
+# 5.1 and 5.2 Reflection
 
-**1) Come up with three of your own Beneficial and corresponding Harmful Effects of Computing**
+## 1) Come up with three of your own Beneficial and corresponding Harmful Effects of Computing
 
 Benefits: 
 
@@ -21,7 +21,7 @@ Harmful:
 
 One bad thing about using tools to help you be more productive is that it can make you feel like you always have to be working, even when you're not at the office, and that can be really tiring and can make it hard for you to have a good balance between your work and personal life.
 
-**What are pros/cons on internet blockers at router and lack of admin password on lab machines at school?**
+## What are pros/cons on internet blockers at router and lack of admin password on lab machines at school?
 
 Pros of internet blockers at router:
 
@@ -47,6 +47,6 @@ Can limit students' ability to customize their work environment and preferences
 Can prevent students from installing necessary software or tools for classwork and projects
 Can leave the machines vulnerable to malware or other security threats if updates are not applied regularly by the staff.
 
-**What concerns do you have personally about the digital divide?**
+## What concerns do you have personally about the digital divide?
 
 Me personally, I don't have any concerns about the digital divide, because it doesnt really affect me day to day. 
