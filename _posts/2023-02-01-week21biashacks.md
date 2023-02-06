@@ -2,7 +2,7 @@
 title: Week 21 bias hacks
 author: Amay Advani
 layout: default
-description: hacks
+description: 5.3-5.4 hacks
 ---
 
 ## Computer Bias Questions
