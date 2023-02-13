@@ -18,7 +18,6 @@ I dont think that this fact is harmful, therfore, I dont believe that it should 
 
 2) Most google and youtube algorithms caters ads and more videos/searches based on your previous videos that you watched, or searchs that are related to things that you already searched. In addition, websites like Amazon market products that are related to things that you have previously bought, or viewed multiple times. 
 
-
 ## As Pairs
 
 The owner of the computer does think that this mistake is intentional. My concluision is that  this software wasnt tested enought with people of darker skin tones, or minimal testing at all. I dont think this mistake would be harmful, although some people could get offended based on this persons response. Yes, I do think that this problem should be corrected. To fix this issue, I would do more testing with people who have a darker skin tone, and probably change the code of the software.
