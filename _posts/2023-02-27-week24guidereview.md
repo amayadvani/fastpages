@@ -1,7 +1,7 @@
 --- 
 title: Guide for Review 
 author: Amay Advani
-layout: default
+layout: base
 description: Week 24 grade and cb
 ---
 
