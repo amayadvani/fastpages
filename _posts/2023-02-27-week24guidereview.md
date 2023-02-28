@@ -87,7 +87,20 @@ I call another function, known as bad_words(), that only activates when a change
 
 ```
 <textarea class="input" placeholder="Take some notes!" id="input2" onchange="bad_words()"></textarea>
+
 ```
+
+### Grading
+
+| Category                | Score | CB Score | Comments |
+|------------------------|-------|----------|----------|
+| Program Purpose and Function | 1 | 1  | valid purpose  with decent function  |
+| Data Abstraction       | 1 | 1 | uses a list to show data abstraction     |
+| Managing Complexity    | 1 | 1 | manages complexity     |
+| Procedural Abstraction | 1 | 1 | develops procedure and functionality is described       |
+| Algorithm Implementation| 1 | 1 | Describes so that it can be recreated.       |
+| Testing                | 1 | 1 | Calls procedures and describes conditions      |
+| Total                | 6/6 | 6/6 |    ->      |
 
 
 
