@@ -44,5 +44,3 @@ Right: The model used by the simulation software often omits details so that it 
    3) a Boolean expression is an expression that evaluates to either true or false. A Boolean expression that checks if a variable "num" is greater than or equal to 15 can be written in several ways.
 
    4) A code that checks if a person is old enough to drive but not old enough to vote would likely involve comparing the person's age to the legal driving age and the legal voting age. 
-
-   5) A code that controls a robot navigating through a maze using a series of if-statements would likely involve checking the robot's current position and the state of the surrounding squares in the maze.
