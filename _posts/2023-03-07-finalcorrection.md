@@ -1,7 +1,7 @@
 ---
 title: MC 3 test corrections
 author : Amay Advani
-layout: default
+layout: base
 description: week 20
 ---
 
