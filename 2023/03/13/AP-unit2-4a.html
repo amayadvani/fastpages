@@ -83,7 +83,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      10 min read
     
 </span></p>
 
@@ -241,8 +241,7 @@ Setters and getters, which enable us to set and retrieve data from an object. </
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">""" database dependencies to support sqlite examples """</span>
-<span class="kn">import</span> <span class="nn">datetime</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">datetime</span>
 <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
 <span class="kn">import</span> <span class="nn">json</span>
 
@@ -314,6 +313,8 @@ Setters and getters, which enable us to set and retrieve data from an object. </
         <span class="sd">"""Check against hashed password."""</span>
         <span class="n">result</span> <span class="o">=</span> <span class="n">check_password_hash</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_password</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">result</span>
+    
+    <span class="c1"># dob property is returned as string, a string represents date outside object</span>
     
     <span class="c1"># dob property is returned as string, a string represents date outside object</span>
     <span class="nd">@property</span>
@@ -461,12 +462,12 @@ Setters and getters, which enable us to set and retrieve data from an object. </
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Created new uid toby
-Created new uid niko
-Created new uid lex
-Created new uid whit
-Created new uid indi
-Created new uid raven
+<pre>Records exist uid toby, or error.
+Records exist uid niko, or error.
+Records exist uid lex, or error.
+Records exist uid whit, or error.
+Records exist uid indi, or error.
+Records exist uid raven, or error.
 </pre>
 </div>
 </div>
@@ -607,9 +608,50 @@ Created new uid raven
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Invalid date  require YYYY-mm-dd, date defaulted to 03-15-2023
+<pre>Invalid date 12234235 require YYYY-mm-dd, date defaulted to 03-19-2023
 Created
- {'id': 7, 'name': '', 'uid': '', 'dob': '03-15-2023', 'age': 0}
+ {'id': 12, 'name': 'erawf', 'uid': 'kejg', 'dob': '03-19-2023', 'age': 0}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">delete_uid</span><span class="p">():</span> 
+    <span class="n">uid</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter uid of user to be deleted."</span><span class="p">)</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="n">find_by_uid</span><span class="p">(</span><span class="n">uid</span><span class="p">)</span>  <span class="c1"># using previous function to locate user by inputted id</span>
+    <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="nb">object</span> <span class="o">=</span> <span class="n">user</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span> 
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"User with uid --</span><span class="si">{</span><span class="n">uid</span><span class="si">}</span><span class="s2">-- has been deleted. "</span><span class="p">)</span>
+        <span class="k">except</span><span class="p">:</span>  <span class="c1"># error raised if object not found</span>
+           <span class="p">(</span><span class="sa">f</span><span class="s2">"No user with uid </span><span class="si">{</span><span class="n">uid</span><span class="si">}</span><span class="s2"> was found."</span><span class="p">)</span>
+        
+<span class="n">delete_uid</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>User with uid --1904196-- has been deleted. 
 </pre>
 </div>
 </div>
@@ -666,42 +708,83 @@ Created
 
 <div class="output_area">
 
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/amaya/vscode/vscode/fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 14</span> in <span class="ansi-cyan-fg">&lt;cell line: 8&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/amaya/vscode/vscode/fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X16sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span>     json_ready = [user.read() for user in table] # "List Comprehensions", for each user add user.read() to list
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/amaya/vscode/vscode/fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X16sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span>     return json_ready
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/amaya/vscode/vscode/fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X16sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> read()
 
+<span class="ansi-green-intense-fg ansi-bold">/home/amaya/vscode/vscode/fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 14</span> in <span class="ansi-cyan-fg">read</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/amaya/vscode/vscode/fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X16sdnNjb2RlLXJlbW90ZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> def read():
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/amaya/vscode/vscode/fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X16sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span>     with app.app_context():
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/amaya/vscode/vscode/fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X16sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span>         table = User.query.all()
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/amaya/vscode/vscode/fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X16sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span>     json_ready = [user.read() for user in table] # "List Comprehensions", for each user add user.read() to list
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/amaya/vscode/vscode/fastpages/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X16sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span>     return json_ready
 
-<div class="output_text output_subarea output_execute_result">
-<pre>[{'id': 1,
-  'name': 'Thomas Edison',
-  'uid': 'toby',
-  'dob': '02-11-1847',
-  'age': 176},
- {'id': 2,
-  'name': 'Nikola Tesla',
-  'uid': 'niko',
-  'dob': '03-15-2023',
-  'age': 0},
- {'id': 3,
-  'name': 'Alexander Graham Bell',
-  'uid': 'lex',
-  'dob': '03-15-2023',
-  'age': 0},
- {'id': 4,
-  'name': 'Eli Whitney',
-  'uid': 'whit',
-  'dob': '03-15-2023',
-  'age': 0},
- {'id': 5,
-  'name': 'Indiana Jones',
-  'uid': 'indi',
-  'dob': '10-21-1920',
-  'age': 102},
- {'id': 6,
-  'name': 'Marion Ravenwood',
-  'uid': 'raven',
-  'dob': '10-21-1921',
-  'age': 101},
- {'id': 7, 'name': '', 'uid': '', 'dob': '03-15-2023', 'age': 0}]</pre>
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/query.py:2697</span>, in <span class="ansi-cyan-fg">Query.all</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2675</span> def all(self) -&gt; List[_T]:
+<span class="ansi-green-intense-fg ansi-bold">   2676</span>     """Return the results represented by this :class:`_query.Query`
+<span class="ansi-green-intense-fg ansi-bold">   2677</span>     as a list.
+<span class="ansi-green-intense-fg ansi-bold">   2678</span> 
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2695</span>         :meth:`_engine.Result.scalars` - v2 comparable method.
+<span class="ansi-green-intense-fg ansi-bold">   2696</span>     """
+<span class="ansi-green-fg">-&gt; 2697</span>     return self._iter().all()
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/result.py:1756</span>, in <span class="ansi-cyan-fg">ScalarResult.all</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1748</span> def all(self) -&gt; Sequence[_R]:
+<span class="ansi-green-intense-fg ansi-bold">   1749</span>     """Return all scalar values in a list.
+<span class="ansi-green-intense-fg ansi-bold">   1750</span> 
+<span class="ansi-green-intense-fg ansi-bold">   1751</span>     Equivalent to :meth:`_engine.Result.all` except that
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1754</span> 
+<span class="ansi-green-intense-fg ansi-bold">   1755</span>     """
+<span class="ansi-green-fg">-&gt; 1756</span>     return self._allrows()
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/result.py:529</span>, in <span class="ansi-cyan-fg">ResultInternal._allrows</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    525</span> post_creational_filter = self._post_creational_filter
+<span class="ansi-green-intense-fg ansi-bold">    527</span> make_row = self._row_getter
+<span class="ansi-green-fg">--&gt; 529</span> rows = self._fetchall_impl()
+<span class="ansi-green-intense-fg ansi-bold">    530</span> made_rows: List[_InterimRowType[_R]]
+<span class="ansi-green-intense-fg ansi-bold">    531</span> if make_row:
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/result.py:1663</span>, in <span class="ansi-cyan-fg">FilterResult._fetchall_impl</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1662</span> def _fetchall_impl(self) -&gt; List[_InterimRowType[Row[Any]]]:
+<span class="ansi-green-fg">-&gt; 1663</span>     return self._real_result._fetchall_impl()
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/result.py:2263</span>, in <span class="ansi-cyan-fg">IteratorResult._fetchall_impl</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2261</span>     self._raise_hard_closed()
+<span class="ansi-green-intense-fg ansi-bold">   2262</span> try:
+<span class="ansi-green-fg">-&gt; 2263</span>     return list(self.iterator)
+<span class="ansi-green-intense-fg ansi-bold">   2264</span> finally:
+<span class="ansi-green-intense-fg ansi-bold">   2265</span>     self._soft_close()
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/orm/loading.py:191</span>, in <span class="ansi-cyan-fg">instances.&lt;locals&gt;.chunks</span><span class="ansi-blue-fg">(size)</span>
+<span class="ansi-green-intense-fg ansi-bold">    189</span>         break
+<span class="ansi-green-intense-fg ansi-bold">    190</span> else:
+<span class="ansi-green-fg">--&gt; 191</span>     fetch = cursor._raw_all_rows()
+<span class="ansi-green-intense-fg ansi-bold">    193</span> if single_entity:
+<span class="ansi-green-intense-fg ansi-bold">    194</span>     proc = process[0]
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/result.py:521</span>, in <span class="ansi-cyan-fg">ResultInternal._raw_all_rows</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    519</span> assert make_row is not None
+<span class="ansi-green-intense-fg ansi-bold">    520</span> rows = self._fetchall_impl()
+<span class="ansi-green-fg">--&gt; 521</span> return [make_row(row) for row in rows]
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/sqlalchemy/engine/result.py:521</span>, in <span class="ansi-cyan-fg">&lt;listcomp&gt;</span><span class="ansi-blue-fg">(.0)</span>
+<span class="ansi-green-intense-fg ansi-bold">    519</span> assert make_row is not None
+<span class="ansi-green-intense-fg ansi-bold">    520</span> rows = self._fetchall_impl()
+<span class="ansi-green-fg">--&gt; 521</span> return [make_row(row) for row in rows]
+
+File <span class="ansi-green-fg">lib/sqlalchemy/cyextension/resultproxy.pyx:25</span>, in <span class="ansi-cyan-fg">sqlalchemy.cyextension.resultproxy.BaseRow.__init__</span><span class="ansi-blue-fg">()</span>
+
+File <span class="ansi-green-fg">lib/sqlalchemy/cyextension/processors.pyx:45</span>, in <span class="ansi-cyan-fg">sqlalchemy.cyextension.processors.str_to_date</span><span class="ansi-blue-fg">()</span>
+
+<span class="ansi-red-fg">ValueError</span>: Invalid isoformat string: '2006-o6-10'</pre>
 </div>
-
 </div>
 
 </div>

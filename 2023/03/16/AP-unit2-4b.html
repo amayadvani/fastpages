@@ -83,7 +83,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      8 min read
     
 </span></p>
 
@@ -186,6 +186,24 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(0, 'id', 'INTEGER', 1, None, 1)
+(1, '_name', 'VARCHAR(255)', 1, None, 0)
+(2, '_uid', 'VARCHAR(255)', 1, None, 0)
+(3, '_password', 'VARCHAR(255)', 1, None, 0)
+(4, '_dob', 'DATE', 0, None, 0)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -242,6 +260,28 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(1, 'Thomas Edison', 'toby', 'sha256$8Bjxw79Ppdz33Gu0$f44e29c684011657a48688356e64bf6a0792fcf7b8025af8037a309c941f5e25', '1847-02-11')
+(2, 'Nikola Tesla', 'niko', 'sha256$xPVKZBh9zCovm8vq$1353313ea114e70b04119f5381c59f5efc3de90f864eba0dba202c1d4a29a88d', '2023-03-15')
+(3, 'Alexander Graham Bell', 'lex', 'sha256$9nbobJ0A7L0cvFtV$5dff2dde113799310d2ad38cbcb02f6869add306561e698b357d9233d80beb0c', '2023-03-15')
+(4, 'Eli Whitney', 'whit', 'sha256$mypuMBkTUsTmeLyp$8c797753a2194632490569af3a998b7f7a79e5b74afce647377aab3000e24022', '2023-03-15')
+(5, 'Indiana Jones', 'indi', 'sha256$tulHsOl9MApGQI2W$8c03f0a32653c54a41f91d7fe33f274b382e0e8c53957fc08b4892a389951446', '1920-10-21')
+(6, 'Marion Ravenwood', 'raven', 'sha256$LU4lrM4WAWJJmb2n$139a6d06746ce0b2fccdc3537d737904a92e6007172fa84bcf87fee29192f1d9', '1921-10-21')
+(7, '', '', 'sha256$CIp9RlVgIc0GaqM4$51ef5faaf0fe5a9b6b20a8eb4575e6d5610a844cf37de5a7b4c6ba4b5a3b0a69', '2023-03-15')
+(8, 'amay', 'papercuber', 'monkeyboy1234', '2006-o6-10')
+(9, 'amay', 'papercubef', 'sha256$PQqiR7p1rxkJHlyP$359deba7daae86afdd05e90ccab3d2e88574c8941fc55673b31118b1bedc2cae', '2006-06-10')
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -306,6 +346,20 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>A new user record 1904196 has been created
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -375,6 +429,20 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The row with user id 1904196 the password has been successfully updated
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -494,6 +562,21 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Please enter c, r, u, or d
+A new user record 12345 has been created
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -552,7 +635,6 @@ window.onload = wrap_img;
     <span class="c1"># Create a list of tuples containing the column name and new value for each provided parameter</span>
     <span class="n">updates</span> <span class="o">=</span> <span class="p">[(</span><span class="n">col</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span> <span class="k">for</span> <span class="n">col</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="p">[(</span><span class="s2">"title"</span><span class="p">,</span> <span class="n">title</span><span class="p">),</span> <span class="p">(</span><span class="s2">"artist"</span><span class="p">,</span> <span class="n">artist</span><span class="p">),</span> <span class="p">(</span><span class="s2">"year"</span><span class="p">,</span> <span class="n">year</span><span class="p">)]</span> <span class="k">if</span> <span class="n">val</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]</span>
     
-    <span class="c1"># Construct an SQL UPDATE query string with placeholders for the new values</span>
     <span class="n">update_query</span> <span class="o">=</span> <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s2"> = ?"</span> <span class="k">for</span> <span class="n">col</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">updates</span><span class="p">])</span>
     
     <span class="c1"># Create a list of values to replace the placeholders in the query string</span>
@@ -573,10 +655,20 @@ window.onload = wrap_img;
     <span class="n">c</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"SELECT * FROM albums"</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">c</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
 
+<span class="k">def</span> <span class="nf">delete_all</span><span class="p">(</span><span class="n">table_name</span><span class="p">):</span>
+    <span class="n">de</span> <span class="o">=</span> <span class="s1">'DELETE FROM '</span> <span class="o">+</span> <span class="s1">'albums.db'</span> <span class="o">+</span> <span class="s1">';'</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">de</span><span class="p">)</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+
+
+
 <span class="c1"># Example usage of the functions</span>
-<span class="n">add_album</span><span class="p">(</span><span class="s2">"DAMN"</span><span class="p">,</span> <span class="s2">"Kendrick Lamar"</span><span class="p">,</span> <span class="mi">2017</span><span class="p">)</span>
-<span class="n">add_album</span><span class="p">(</span><span class="s2">"808s and Heartbreak"</span><span class="p">,</span> <span class="s2">"Kanye West"</span><span class="p">,</span> <span class="mi">2008</span><span class="p">)</span>
-<span class="n">add_album</span><span class="p">(</span><span class="s2">"The Melodic Blue"</span><span class="p">,</span> <span class="s2">"Baby Keem"</span><span class="p">,</span> <span class="mi">2019</span><span class="p">)</span>
+<span class="c1">#add_album("DAMN", "Kendrick Lamar", 2017)</span>
+<span class="c1">#add_album("808s and Heartbreak", "Kanye West", 2008)</span>
+<span class="c1">#add_album("The Melodic Blue", "Baby Keem", 2019)</span>
+<span class="n">delete_album</span><span class="p">(</span><span class="mi">49</span><span class="p">)</span>
+
+<span class="n">get_all_albums</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -588,10 +680,44 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[(1, 'DAMN', 'Kendrick Lamar', 2008), (2, '808s and Heartbreak', 'Kanye West', 2008), (3, 'The Melodic Blue', 'Baby Keem', 2019), (4, 'DAMN', 'Kendrick Lamar', 2017), (5, '808s and Heartbreak', 'Kanye West', 2008), (6, 'The Melodic Blue', 'Baby Keem', 2019), (7, 'DAMN', 'Kendrick Lamar', 2017), (8, '808s and Heartbreak', 'Kanye West', 2008), (9, 'The Melodic Blue', 'Baby Keem', 2019), (10, 'DAMN', 'Kendrick Lamar', 2017), (11, '808s and Heartbreak', 'Kanye West', 2008), (12, 'The Melodic Blue', 'Baby Keem', 2019), (13, 'DAMN', 'Kendrick Lamar', 2017), (14, '808s and Heartbreak', 'Kanye West', 2008), (15, 'The Melodic Blue', 'Baby Keem', 2019), (16, 'DAMN', 'Kendrick Lamar', 2017), (17, '808s and Heartbreak', 'Kanye West', 2008), (18, 'The Melodic Blue', 'Baby Keem', 2019), (19, 'DAMN', 'Kendrick Lamar', 2017), (20, '808s and Heartbreak', 'Kanye West', 2008), (21, 'The Melodic Blue', 'Baby Keem', 2019), (22, 'DAMN', 'Kendrick Lamar', 2017), (23, '808s and Heartbreak', 'Kanye West', 2008), (24, 'The Melodic Blue', 'Baby Keem', 2019)]
-</pre>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[(15, 'The Melodic Blue', 'Baby Keem', 2019),
+ (16, 'DAMN', 'Kendrick Lamar', 2017),
+ (17, '808s and Heartbreak', 'Kanye West', 2008),
+ (18, 'The Melodic Blue', 'Baby Keem', 2019),
+ (19, 'DAMN', 'Kendrick Lamar', 2017),
+ (20, '808s and Heartbreak', 'Kanye West', 2008),
+ (21, 'The Melodic Blue', 'Baby Keem', 2019),
+ (22, 'DAMN', 'Kendrick Lamar', 2017),
+ (23, '808s and Heartbreak', 'Kanye West', 2008),
+ (24, 'The Melodic Blue', 'Baby Keem', 2019),
+ (25, 'DAMN', 'Kendrick Lamar', 2017),
+ (26, '808s and Heartbreak', 'Kanye West', 2008),
+ (27, 'The Melodic Blue', 'Baby Keem', 2019),
+ (28, 'DAMN', 'Kendrick Lamar', 2017),
+ (29, '808s and Heartbreak', 'Kanye West', 2008),
+ (30, 'The Melodic Blue', 'Baby Keem', 2019),
+ (31, 'DAMN', 'Kendrick Lamar', 2017),
+ (32, '808s and Heartbreak', 'Kanye West', 2008),
+ (33, 'The Melodic Blue', 'Baby Keem', 2019),
+ (34, 'DAMN', 'Kendrick Lamar', 2017),
+ (35, '808s and Heartbreak', 'Kanye West', 2008),
+ (37, 'DAMN', 'Kendrick Lamar', 2017),
+ (38, '808s and Heartbreak', 'Kanye West', 2008),
+ (39, 'The Melodic Blue', 'Baby Keem', 2019),
+ (40, 'DAMN', 'Kendrick Lamar', 2017),
+ (41, '808s and Heartbreak', 'Kanye West', 2008),
+ (42, 'The Melodic Blue', 'Baby Keem', 2019),
+ (43, 'DAMN', 'Kendrick Lamar', 2017),
+ (44, '808s and Heartbreak', 'Kanye West', 2008),
+ (45, 'The Melodic Blue', 'Baby Keem', 2019),
+ (46, 'DAMN', 'Kendrick Lamar', 2017),
+ (47, '808s and Heartbreak', 'Kanye West', 2008),
+ (48, 'The Melodic Blue', 'Baby Keem', 2019)]</pre>
 </div>
+
 </div>
 
 </div>
