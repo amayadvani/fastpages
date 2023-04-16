@@ -9,7 +9,7 @@ title : Big Idea 2 quiz Corrections
 
 ## Review for Big Idea 2
 
-![Alt text](../images/bigidea2.png)
+![]({{site.baseurl}}/images/bigidea2.png)
 
 * I got a 19/25 on this quiz as a result of rushing my answers. 
 
