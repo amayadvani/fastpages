@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      19 min read
+      16 min read
     
 </span></p>
 
@@ -974,8 +974,9 @@ Standard Deviation Minutes:  9.938856040875548
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="c1"># read the CSV file</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"Games.csv"</span><span class="p">)</span>
+<span class="n">df</span> <span class="p">[</span><span class="s2">"Id"</span><span class="p">]</span>
 <span class="c1"># display the data in a table</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span> <span class="p">[</span><span class="s2">"Id"</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -988,163 +989,18 @@ Standard Deviation Minutes:  9.938856040875548
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>                                                    Id  \
-0                     50 Cent: Bulletproof - Australia   
-1                      Assassin's Creed - Saudi Arabia   
-2                               Battlefield III - Iran   
-3                               Battlefield IV - China   
-4    BlazBlue II: Continuum Shift - United Arab Emi...   
-..                                                 ...   
-131  Tom Clancy's Splinter Cell III: Chaos Theory -...   
-132                                 Voyeur - Australia   
-133                  Watch Dogs - United Arab Emirates   
-134                              Wolfenstein - Germany   
-135                           Wolfenstein 3D - Germany   
-
-                                             Game                      Series  \
-0                            50 Cent: Bulletproof        50 Cent: Bulletproof   
-1                                Assassin's Creed            Assassin's Creed   
-2                                 Battlefield III                 Battlefield   
-3                                  Battlefield IV                 Battlefield   
-4                    BlazBlue II: Continuum Shift                    BlazBlue   
-..                                            ...                         ...   
-131  Tom Clancy's Splinter Cell III: Chaos Theory  Tom Clancy's Splinter Cell   
-132                                        Voyeur                      Voyeur   
-133                                    Watch Dogs                  Watch Dogs   
-134                                   Wolfenstein                 Wolfenstein   
-135                                Wolfenstein 3D                 Wolfenstein   
-
-                  Country                                            Details  \
-0               Australia  Banned due to high impact gory violence.\nA ce...   
-1            Saudi Arabia  Was banned (for two weeks) because of perceive...   
-2                    Iran  Banned due to the intense battles of the ficti...   
-3                   China  Banned due to the discrediting of China's nati...   
-4    United Arab Emirates  Banned likely due to suggestive and revealing ...   
-..                    ...                                                ...   
-131           South Korea  Banned until 2006 because one of the levels ha...   
-132             Australia  Originally rated MA15+.\nLater appealed and ba...   
-133  United Arab Emirates  Initially banned, and also withheld from regio...   
-134               Germany                 Banned because of Nazi references.   
-135               Germany             Was banned because of Nazi references.   
-
-                                          Ban Category  \
-0                         Graphic Violence and Cruelty   
-1                 Ideological and/or Religious Reasons   
-2                 Ideological and/or Religious Reasons   
-3                 Ideological and/or Religious Reasons   
-4                                       Sex and Nudity   
-..                                                 ...   
-131               Ideological and/or Religious Reasons   
-132                                     Sex and Nudity   
-133  Sex and Nudity|Graphic Violence and Cruelty|Dr...   
-134               Ideological and/or Religious Reasons   
-135               Ideological and/or Religious Reasons   
-
-                    Ban Status  \
-0    Censored Version Released   
-1                   Ban Lifted   
-2                       Active   
-3                       Active   
-4                       Active   
-..                         ...   
-131                     Active   
-132                     Active   
-133                     Active   
-134                     Active   
-135                     Active   
-
-                                     Wikipedia Profile  \
-0    https://en.wikipedia.org/wiki/50_Cent:_Bulletp...   
-1       https://en.wikipedia.org/wiki/Assassin's_Creed   
-2          https://en.wikipedia.org/wiki/Battlefield_3   
-3          https://en.wikipedia.org/wiki/Battlefield_4   
-4    https://en.wikipedia.org/wiki/BlazBlue:_Contin...   
-..                                                 ...   
-131  https://en.wikipedia.org/wiki/Tom_Clancy's_Spl...   
-132  https://en.wikipedia.org/wiki/Voyeur_(video_game)   
-133           https://en.wikipedia.org/wiki/Watch_Dogs   
-134  https://en.wikipedia.org/wiki/Wolfenstein_(200...   
-135       https://en.wikipedia.org/wiki/Wolfenstein_3D   
-
-                                                 Image  \
-0    //upload.wikimedia.org/wikipedia/en/2/28/50_Ce...   
-1    //upload.wikimedia.org/wikipedia/en/thumb/2/2a...   
-2    //upload.wikimedia.org/wikipedia/en/6/69/Battl...   
-3    //upload.wikimedia.org/wikipedia/en/thumb/7/75...   
-4    //upload.wikimedia.org/wikipedia/en/8/8c/BlazB...   
-..                                                 ...   
-131  //upload.wikimedia.org/wikipedia/en/1/17/Tom_C...   
-132                                                NaN   
-133  //upload.wikimedia.org/wikipedia/en/thumb/d/d9...   
-134  //upload.wikimedia.org/wikipedia/en/e/ee/Wolfe...   
-135  //upload.wikimedia.org/wikipedia/en/0/05/Wolfe...   
-
-                                               Summary  \
-0    50 Cent: Bulletproof is a video game for the P...   
-1    Assassin's Creed is a historical fiction actio...   
-2    Battlefield 3 is a first-person shooter video ...   
-3    Battlefield 4 is a first-person shooter video ...   
-4    BlazBlue: Continuum Shift (ブレイブルー コンティニュアム シフト...   
-..                                                 ...   
-131  Tom Clancy's Splinter Cell: Chaos Theory is a ...   
-132  Voyeur and Voyeur II were full motion video ga...   
-133  Watch Dogs (stylized as WATCH_DOGS) is an upco...   
-134  Wolfenstein is a first-person shooter video ga...   
-135  Wolfenstein 3D is a first-person shooter video...   
-
-                                             Developer  \
-0        Interscope Records|High Voltage|Genuine Games   
-1                    Ubisoft|Griptonite Games|Gameloft   
-2                                      Electronic Arts   
-3                                      Electronic Arts   
-4                                           Arc System   
-..                                                 ...   
-131                                   Gameloft|Ubisoft   
-132  Philips POV Entertainment Group|InterWeave Ent...   
-133                                            Ubisoft   
-134                         Id Software|Raven Software   
-135  Id Software|Rebecca Heineman|Ninjaforce|Stalke...   
-
-                                             Publisher  \
-0                                 Sierra|Vivendi Games   
-1                                              Ubisoft   
-2                                 Electronic Arts|Sega   
-3                                      Electronic Arts   
-4                               Arc System Works|Aksys   
-..                                                 ...   
-131                                   Ubisoft|Gameloft   
-132            MacPlay|Philips|Interplay Entertainment   
-133                                            Ubisoft   
-134                                         Activision   
-135  Apogee|Manaccom|Interplay Entertainment|BAM! E...   
-
-                                           Genre  \
-0                                         Action   
-1    Historical fiction|Stealth|Action|Adventure   
-2                           First-person shooter   
-3                           First-person shooter   
-4                                       Fighting   
-..                                           ...   
-131                                      Stealth   
-132                                  Full Motion   
-133                             Action|Adventure   
-134                         First-person shooter   
-135                         First-person shooter   
-
-                                              Homepage  
-0                                                  NaN  
-1                        http://www.assassinscreed.com  
-2              http://www.battlefield.com/battlefield3  
-3             http://www.battlefield.com/battlefield-4  
-4                               http://blazblue.jp/ac/  
-..                                                 ...  
-131                                                NaN  
-132                                                NaN  
-133                      http://www.watchdogs.ubi.com/  
-134                                                NaN  
-135  http://www.idsoftware.com/games/wolfenstein/wo...  
-
-[136 rows x 14 columns]
+<pre>0                       50 Cent: Bulletproof - Australia
+1                        Assassin's Creed - Saudi Arabia
+2                                 Battlefield III - Iran
+3                                 Battlefield IV - China
+4      BlazBlue II: Continuum Shift - United Arab Emi...
+                             ...                        
+131    Tom Clancy's Splinter Cell III: Chaos Theory -...
+132                                   Voyeur - Australia
+133                    Watch Dogs - United Arab Emirates
+134                                Wolfenstein - Germany
+135                             Wolfenstein 3D - Germany
+Name: Id, Length: 136, dtype: object
 </pre>
 </div>
 </div>
