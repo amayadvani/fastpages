@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Login Guide! | Amay Advani</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Login Guide!" />
+<meta name="author" content="Amay Advani" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Step by step proccess explained on how to make a login page for any given site." />
+<meta property="og:description" content="Step by step proccess explained on how to make a login page for any given site." />
+<link rel="canonical" href="https://amayadvani.github.io/fastpages/2023/05/22/loginguide.html" />
+<meta property="og:url" content="https://amayadvani.github.io/fastpages/2023/05/22/loginguide.html" />
+<meta property="og:site_name" content="Amay Advani" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-05-22T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Login Guide!" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Amay Advani"},"dateModified":"2023-05-22T00:00:00-05:00","datePublished":"2023-05-22T00:00:00-05:00","description":"Step by step proccess explained on how to make a login page for any given site.","headline":"Login Guide!","mainEntityOfPage":{"@type":"WebPage","@id":"https://amayadvani.github.io/fastpages/2023/05/22/loginguide.html"},"url":"https://amayadvani.github.io/fastpages/2023/05/22/loginguide.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://amayadvani.github.io/fastpages/feed.xml" title="Amay Advani" /><link rel="shortcut icon" type="image/x-icon" href="/fastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" /><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
+
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/fastpages/">Amay Advani</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/fastpages/_pages/2022-class-weeks.html">Class Weeks</a><a class="page-link" href="/fastpages/2023-04-05-AP_computers_networks.html">Computers and Networks (Unit 4)</a><a class="page-link" href="/fastpages/2048">2048 game</a><a class="page-link" href="/fastpages/about/">About Me</a><a class="page-link" href="/fastpages/search/">Search</a><a class="page-link" href="/fastpages/pages/submenu.html">Sub Menu</a><a class="page-link" href="/fastpages/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Login Guide!</h1><p class="page-description">Step by step proccess explained on how to make a login page for any given site.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-05-22T00:00:00-05:00" itemprop="datePublished">
+        May 22, 2023
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Amay Advani</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+
+    
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h3"><a href="#1.-HTML-Structure:-30-mins">1. HTML Structure: 30 mins </a></li>
+<li class="toc-entry toc-h3"><a href="#2--sectionh3">2.  Section:&lt;/h3&gt;
+</a></li>
+<li class="toc-entry toc-h3"><a href="#3.-CSS-Styling:-1-hour-with-trial-and-error">3. CSS Styling: 1 hour with trial and error </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-05-22-loginguide.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.-HTML-Structure:-30-mins">
+<a class="anchor" href="#1.-HTML-Structure:-30-mins" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. HTML Structure: 30 mins<a class="anchor-link" href="#1.-HTML-Structure:-30-mins"> </a>
+</h3>
+<p>The code begins with &lt;!DOCTYPE html&gt;, which declares the document type as HTML.
+The  tags enclose the entire HTML content.
+Inside the  tags, we have the </p> and  sections.&lt;/p&gt;
+<h3>
+<a class="anchor" href="#2--sectionh3" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.  Section:&lt;/h3&gt;
+</h3>
+<p>The </p> section contains metadata and external resources.
+The <title> element sets the title of the web page, which will be displayed on the browser's title bar.&lt;/p&gt;
+<h3 id="3.-CSS-Styling:-1-hour-with-trial-and-error">
+<a class="anchor" href="#3.-CSS-Styling:-1-hour-with-trial-and-error" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. CSS Styling: 1 hour with trial and error<a class="anchor-link" href="#3.-CSS-Styling:-1-hour-with-trial-and-error"> </a>
+</h3>
+<p>The code includes a <style> block to define CSS styles for the login page.
+The .container class sets up a container div with flexbox properties to center the content both vertically and horizontally.
+The <h1> tag styles the login heading with a color of #333.
+The CSS rules for input[type="text"] and input[type="password"] specify the width, padding, margin, border, and border-radius for the input fields.
+The button selector defines styles for the login button.</p>
+<h3>4. <body> Section:</h3>
+<p>The <body> section contains the visible content of the web page.
+The login page is wrapped within a <div> element with a class of "container".
+Inside the container, there is an <h1> element displaying the heading "Login".
+A <form> element with an id of "loginForm" wraps the login inputs and the submit button.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">title</span><span class="o">&gt;</span><span class="n">ALAAT</span> <span class="n">Login</span> <span class="n">Page</span><span class="o">&lt;/</span><span class="n">title</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
+    <span class="o">/*</span> <span class="n">CSS</span> <span class="n">styles</span> <span class="k">for</span> <span class="n">the</span> <span class="n">login</span> <span class="n">page</span> <span class="o">*/</span>
+    <span class="o">.</span><span class="n">container</span> <span class="p">{</span>
+      <span class="n">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+      <span class="n">flex</span><span class="o">-</span><span class="n">direction</span><span class="p">:</span> <span class="n">column</span><span class="p">;</span>
+      <span class="n">align</span><span class="o">-</span><span class="n">items</span><span class="p">:</span> <span class="n">center</span><span class="p">;</span>
+      <span class="n">justify</span><span class="o">-</span><span class="n">content</span><span class="p">:</span> <span class="n">center</span><span class="p">;</span>
+      <span class="n">height</span><span class="p">:</span> <span class="mi">100</span><span class="n">vh</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">h1</span> <span class="p">{</span>
+      <span class="n">color</span><span class="p">:</span> <span class="c1">#333;</span>
+    <span class="p">}</span>
+    <span class="nb">input</span><span class="p">[</span><span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">],</span>
+    <span class="nb">input</span><span class="p">[</span><span class="nb">type</span><span class="o">=</span><span class="s2">&quot;password&quot;</span><span class="p">]</span> <span class="p">{</span>
+      <span class="n">width</span><span class="p">:</span> <span class="mi">300</span><span class="n">px</span><span class="p">;</span>
+      <span class="n">padding</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
+      <span class="n">margin</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
+      <span class="n">border</span><span class="p">:</span> <span class="mi">1</span><span class="n">px</span> <span class="n">solid</span> <span class="c1">#ccc;</span>
+      <span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">:</span> <span class="mi">4</span><span class="n">px</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">button</span> <span class="p">{</span>
+      <span class="n">padding</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span> <span class="mi">20</span><span class="n">px</span><span class="p">;</span>
+      <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#333;</span>
+      <span class="n">color</span><span class="p">:</span> <span class="c1">#fff;</span>
+      <span class="n">border</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
+      <span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">:</span> <span class="mi">4</span><span class="n">px</span><span class="p">;</span>
+      <span class="n">cursor</span><span class="p">:</span> <span class="n">pointer</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
+  <span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>HTML and CSS Example</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="5.Form-Inputs:-30-mins">5.Form Inputs: 30 mins<a class="anchor-link" href="#5.Form-Inputs:-30-mins"> </a></h3><p>Inside the form, there are two input fields:
+The first input field has type="text" and an id of "usernameInput". It is used for entering the username.
+The second input field has type="password" and an id of "passwordInput". It is used for entering the password.
+Both input fields have a placeholder attribute that provides a hint to the user about what to enter.</p>
+<h3 id="6.-Login-Button:">6. Login Button:<a class="anchor-link" href="#6.-Login-Button:"> </a></h3><p>The code includes a <button> element with an id of "loginBtn". It represents the login button.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+   <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;container&quot;</span><span class="o">&gt;</span>
+     <span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">Login</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
+     <span class="o">&lt;</span><span class="n">form</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;loginForm&quot;</span><span class="o">&gt;</span>
+       <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;usernameInput&quot;</span> <span class="n">placeholder</span><span class="o">=</span><span class="s2">&quot;Username&quot;</span><span class="o">&gt;</span>
+       <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;password&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;passwordInput&quot;</span> <span class="n">placeholder</span><span class="o">=</span><span class="s2">&quot;Password&quot;</span><span class="o">&gt;</span>
+       <span class="o">&lt;</span><span class="n">button</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;loginBtn&quot;</span><span class="o">&gt;</span><span class="n">Login</span><span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
+     <span class="o">&lt;/</span><span class="n">form</span><span class="o">&gt;</span>
+   <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="7.-JavaScript-Section:-1-hour">7. JavaScript Section: 1 hour<a class="anchor-link" href="#7.-JavaScript-Section:-1-hour"> </a></h3><p>The <script> block contains JavaScript code that adds interactivity to the login page.
+The JavaScript code is executed when the DOMContentLoaded event is fired, which ensures that the page has finished loading before the script runs.</p>
+<h3 id="8.-User-Dictionary:">8. User Dictionary:<a class="anchor-link" href="#8.-User-Dictionary:"> </a></h3><p>The code declares a JavaScript variable named users which is a dictionary object.
+The users object stores username-password pairs as key-value pairs.
+In this example, the usernames and passwords are defined as group members first and last names.</p>
+<h3 id="9.-Event-Listeners-and-Handling:">9. Event Listeners and Handling:<a class="anchor-link" href="#9.-Event-Listeners-and-Handling:"> </a></h3><p>The code attaches an event listener to the login form using the addEventListener method.
+When the form is submitted, the event listener callback function is executed.
+The callback function prevents the default form submission behavior using event.preventDefault().
+It retrieves the values of the username and password input fields.
+It checks if the entered username exists in the users dictionary and if the associated password matches.
+If the credentials are valid, the page is redirected to YouTube (<a href="https://www.youtube.com">https://www.youtube.com</a>) using window.location.href.
+If the credentials are invalid, an alert is displayed to the user.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+   <span class="o">//</span> <span class="n">Dictionary</span> <span class="n">to</span> <span class="n">store</span> <span class="n">username</span><span class="o">-</span><span class="n">password</span> <span class="n">pairs</span>
+   <span class="n">var</span> <span class="n">users</span> <span class="o">=</span> <span class="p">{</span>
+     <span class="s2">&quot;amay&quot;</span><span class="p">:</span> <span class="s2">&quot;advani&quot;</span><span class="p">,</span>
+     <span class="s2">&quot;arnav&quot;</span><span class="p">:</span> <span class="s2">&quot;kanekar&quot;</span><span class="p">,</span>
+     <span class="s2">&quot;taiyo&quot;</span><span class="p">:</span> <span class="s2">&quot;iwazaki&quot;</span><span class="p">,</span>
+     <span class="s2">&quot;adi&quot;</span><span class="p">:</span> <span class="s2">&quot;nawandhar&quot;</span><span class="p">,</span>
+     <span class="s2">&quot;liav&quot;</span><span class="p">:</span> <span class="s2">&quot;bar&quot;</span>
+   <span class="p">};</span>
+   <span class="n">document</span><span class="o">.</span><span class="n">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+     <span class="n">var</span> <span class="n">loginForm</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">&#39;loginForm&#39;</span><span class="p">);</span>
+     <span class="n">var</span> <span class="n">usernameInput</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">&#39;usernameInput&#39;</span><span class="p">);</span>
+     <span class="n">var</span> <span class="n">passwordInput</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">&#39;passwordInput&#39;</span><span class="p">);</span>
+
+     <span class="n">loginForm</span><span class="o">.</span><span class="n">addEventListener</span><span class="p">(</span><span class="s1">&#39;submit&#39;</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span><span class="n">event</span><span class="p">)</span> <span class="p">{</span>
+       <span class="n">event</span><span class="o">.</span><span class="n">preventDefault</span><span class="p">();</span> <span class="o">//</span> <span class="n">Prevent</span> <span class="n">form</span> <span class="n">submission</span>
+
+       <span class="n">var</span> <span class="n">username</span> <span class="o">=</span> <span class="n">usernameInput</span><span class="o">.</span><span class="n">value</span><span class="p">;</span>
+       <span class="n">var</span> <span class="n">password</span> <span class="o">=</span> <span class="n">passwordInput</span><span class="o">.</span><span class="n">value</span><span class="p">;</span>
+
+       <span class="o">//</span> <span class="n">Check</span> <span class="k">if</span> <span class="n">the</span> <span class="n">username</span> <span class="ow">and</span> <span class="n">password</span> <span class="n">match</span>
+       <span class="k">if</span> <span class="p">(</span><span class="n">users</span><span class="o">.</span><span class="n">hasOwnProperty</span><span class="p">(</span><span class="n">username</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">users</span><span class="p">[</span><span class="n">username</span><span class="p">]</span> <span class="o">===</span> <span class="n">password</span><span class="p">)</span> <span class="p">{</span>
+         <span class="n">window</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">href</span> <span class="o">=</span> <span class="s1">&#39;https://www.youtube.com&#39;</span><span class="p">;</span> <span class="o">//</span> <span class="n">Redirect</span> <span class="n">to</span> <span class="n">YouTube</span>
+       <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+         <span class="n">alert</span><span class="p">(</span><span class="s2">&quot;Your username or password is wrong. Do better next time!&quot;</span><span class="p">);</span>
+       <span class="p">}</span>
+     <span class="p">});</span>
+   <span class="p">});</span>
+ <span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Challenges-+-Changes-1-hour">Challenges + Changes 1 hour<a class="anchor-link" href="#Challenges-+-Changes-1-hour"> </a></h3><p>Intially, when I started to code this feature, I was planning on encorperating a backend function to let different users create their owne accounts and login using an API. But as our group thought through this, we realized that only admin logins were needed for the photo upload and tagging.</p>
+<p>A solution I came up with is to replace the use of an API with regular dictionary that used usernames as keys, and passwords as values. This soulution also decreased complexity and helps with the effiency of our program as a whole.</p>
+
+</div>
+</div>
+</div>
+</div>
+ 
+
+</style></p>
+</title>
+</div>
+</div></div>
+</div>
+
+
+  </div><a class="u-url" href="/fastpages/2023/05/22/loginguide.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/fastpages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://amayadvani.github.io/fastpages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/fastpages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Amay&#39;s FastPages website!!</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
