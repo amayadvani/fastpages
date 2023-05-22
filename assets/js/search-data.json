@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Login Guide!",
-            "content": "1. HTML Structure: 30 mins . The code begins with &lt;!DOCTYPE html&gt;, which declares the document type as HTML. The tags enclose the entire HTML content. Inside the tags, we have the and sections.&lt;/p&gt; 2. Section:&lt;/h3&gt; The section contains metadata and external resources. The element sets the title of the web page, which will be displayed on the browser&#39;s title bar.&lt;/p&gt; 3. CSS Styling: 1 hour with trial and error . The code includes a . .",
+            "content": "1. HTML Structure: 30 mins . The code begins with &lt;!DOCTYPE html&gt;, which declares the document type as HTML. The tags enclose the entire HTML content. Inside the tags, we have the and sections.&lt;/p&gt; 2. head Section: . The section contains metadata and external resources. The element sets the title of the web page, which will be displayed on the browser&#39;s title bar.&lt;/p&gt; 3. CSS Styling: 1 hour with trial and error . The code includes a . .",
             "url": "https://amayadvani.github.io/fastpages/2023/05/22/loginguide.html",
             "relUrl": "/2023/05/22/loginguide.html",
             "date": " • May 22, 2023"
