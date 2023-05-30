@@ -84,7 +84,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      6 min read
     
 </span></p>
 
@@ -104,6 +104,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#7.-JavaScript-Section:-1-hour">7. JavaScript Section: 1 hour </a></li>
 <li class="toc-entry toc-h3"><a href="#8.-User-Dictionary:">8. User Dictionary: </a></li>
 <li class="toc-entry toc-h3"><a href="#9.-Event-Listeners-and-Handling:">9. Event Listeners and Handling: </a></li>
+<li class="toc-entry toc-h3"><a href="#Login-Backend!!">Login Backend!! </a></li>
 <li class="toc-entry toc-h3"><a href="#Challenges-+-Changes-1-hour">Challenges + Changes 1 hour </a></li>
 </ul><!--
 #################################################
@@ -308,6 +309,123 @@ If the credentials are invalid, an alert is displayed to the user.</p>
        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
          <span class="n">alert</span><span class="p">(</span><span class="s2">"Your username or password is wrong. Do better next time!"</span><span class="p">);</span>
        <span class="p">}</span>
+     <span class="p">});</span>
+   <span class="p">});</span>
+ <span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Login-Backend!!">
+<a class="anchor" href="#Login-Backend!!" aria-hidden="true"><span class="octicon octicon-link"></span></a>Login Backend!!<a class="anchor-link" href="#Login-Backend!!"> </a>
+</h3>
+<ol>
+<li>
+<p>The code is enclosed within the DOMContentLoaded event listener, which ensures that the JavaScript code runs after the HTML document has finished loading.</p>
+</li>
+<li>
+<p>It starts by getting references to the login form and input fields for username, password, and name using their respective id attributes.</p>
+</li>
+<li>
+<p>An event listener is added to the login form's submit event using the addEventListener method. This event listener will execute the provided callback function when the form is submitted.</p>
+</li>
+<li>
+<p>Within the callback function, event.preventDefault() is called to prevent the default form submission behavior, which would cause the page to reload.</p>
+</li>
+<li>
+<p>The values entered by the user in the username, password, and name input fields are retrieved and stored in the respective variables.</p>
+</li>
+<li>
+<p>A GET request is made using the fetch function to retrieve user data from the specified API endpoint, "<a href="https://alaat.duckdns.org/api/users">https://alaat.duckdns.org/api/users</a>".</p>
+</li>
+<li>
+<p>The response from the API is converted to JSON format using the response.json() method.</p>
+</li>
+<li>
+<p>In the following then block, a variable userFound is initialized as false to track whether a matching user is found.</p>
+</li>
+<li>
+<p>A loop is used to iterate over each user object in the data array obtained from the API response.</p>
+</li>
+<li>
+<p>Within the loop, the name property of each user object is compared to the name variable entered by the user.</p>
+</li>
+<li>
+<p>If a matching user is found (the name values match), the userFound variable is set to true, and the loop is terminated using the break statement.</p>
+</li>
+<li>
+<p>After the loop, an if-else statement checks the value of userFound.</p>
+</li>
+<li>
+<p>If userFound is true, it means a matching user was found, and the page is redirected to the desired page (in this case, imagedrop.html) using window.location.href.</p>
+</li>
+<li>
+<p>If userFound is false, an alert is displayed indicating that the username, password, or name is incorrect.</p>
+</li>
+<li>
+<p>The code also includes a catch block to handle any errors that may occur during the fetch request or response handling. If an error occurs, it is logged to the console, and an alert is displayed to the user indicating that an error occurred while logging in.</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+   <span class="n">document</span><span class="o">.</span><span class="n">addEventListener</span><span class="p">(</span><span class="s1">'DOMContentLoaded'</span><span class="p">,</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+     <span class="n">var</span> <span class="n">loginForm</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">'loginForm'</span><span class="p">);</span>
+     <span class="n">var</span> <span class="n">usernameInput</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">'usernameInput'</span><span class="p">);</span>
+     <span class="n">var</span> <span class="n">passwordInput</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">'passwordInput'</span><span class="p">);</span>
+     <span class="n">var</span> <span class="n">nameInput</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">'nameInput'</span><span class="p">);</span>
+
+     <span class="n">loginForm</span><span class="o">.</span><span class="n">addEventListener</span><span class="p">(</span><span class="s1">'submit'</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span><span class="n">event</span><span class="p">)</span> <span class="p">{</span>
+       <span class="n">event</span><span class="o">.</span><span class="n">preventDefault</span><span class="p">();</span> <span class="o">//</span> <span class="n">Prevent</span> <span class="n">form</span> <span class="n">submission</span>
+
+       <span class="n">var</span> <span class="n">username</span> <span class="o">=</span> <span class="n">usernameInput</span><span class="o">.</span><span class="n">value</span><span class="p">;</span>
+       <span class="n">var</span> <span class="n">password</span> <span class="o">=</span> <span class="n">passwordInput</span><span class="o">.</span><span class="n">value</span><span class="p">;</span>
+       <span class="n">var</span> <span class="n">name</span> <span class="o">=</span> <span class="n">nameInput</span><span class="o">.</span><span class="n">value</span><span class="p">;</span>
+
+       <span class="o">//</span> <span class="n">Make</span> <span class="n">the</span> <span class="n">GET</span> <span class="n">request</span> <span class="n">to</span> <span class="n">retrieve</span> <span class="n">user</span> <span class="n">data</span>
+       <span class="n">fetch</span><span class="p">(</span><span class="s2">"https://alaat.duckdns.org/api/users"</span><span class="p">)</span>
+         <span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">response</span> <span class="o">=&gt;</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+         <span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
+           <span class="n">var</span> <span class="n">userFound</span> <span class="o">=</span> <span class="n">false</span><span class="p">;</span>
+
+           <span class="o">//</span> <span class="n">Iterate</span> <span class="n">over</span> <span class="n">the</span> <span class="n">array</span> <span class="n">of</span> <span class="n">users</span>
+           <span class="k">for</span> <span class="p">(</span><span class="n">var</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">data</span><span class="o">.</span><span class="n">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+             <span class="n">var</span> <span class="n">user</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+
+             <span class="o">//</span> <span class="n">Check</span> <span class="k">if</span> <span class="n">the</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="ow">and</span> <span class="n">name</span> <span class="n">match</span> <span class="k">for</span> <span class="n">the</span> <span class="n">current</span> <span class="n">user</span>
+             <span class="k">if</span> <span class="p">(</span><span class="n">user</span><span class="o">.</span><span class="n">username</span> <span class="o">===</span> <span class="n">username</span> <span class="o">&amp;&amp;</span> <span class="n">user</span><span class="o">.</span><span class="n">password</span> <span class="o">===</span> <span class="n">password</span> <span class="o">&amp;&amp;</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="o">===</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
+               <span class="n">userFound</span> <span class="o">=</span> <span class="n">true</span><span class="p">;</span>
+               <span class="k">break</span><span class="p">;</span>
+             <span class="p">}</span>
+           <span class="p">}</span>
+
+           <span class="k">if</span> <span class="p">(</span><span class="n">userFound</span><span class="p">)</span> <span class="p">{</span>
+             <span class="n">window</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">href</span> <span class="o">=</span> <span class="s1">'{{ site.baseurl }}/imagedrop.html'</span><span class="p">;</span> <span class="o">//</span> <span class="n">Redirect</span> <span class="n">to</span> <span class="n">the</span> <span class="n">desired</span> <span class="n">page</span>
+           <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+             <span class="n">alert</span><span class="p">(</span><span class="s2">"Your username, password, or name is incorrect. Please try again."</span><span class="p">);</span>
+           <span class="p">}</span>
+         <span class="p">})</span>
+         <span class="o">.</span><span class="n">catch</span><span class="p">(</span><span class="n">error</span> <span class="o">=&gt;</span> <span class="p">{</span>
+           <span class="n">console</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">error</span><span class="p">);</span>
+           <span class="n">alert</span><span class="p">(</span><span class="s2">"An error occurred while logging in. Please try again later."</span><span class="p">);</span>
+         <span class="p">});</span>
      <span class="p">});</span>
    <span class="p">});</span>
  <span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
