@@ -1,0 +1,15 @@
+{
+  "name": "fastpages_cad_project",
+  "version": "1.0.0",
+  "description": "[//]: # (This template replaces README.md when someone creates a new repo with the fastpages template.)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.173.0"
+  }
+}

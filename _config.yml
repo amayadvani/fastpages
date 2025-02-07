@@ -7,10 +7,10 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: Amay Advani
-description: Amay's FastPages website!!
+description: GitHub FastPages powered by Jekyll
 github_username: amayadvani
 # you can comment the below line out if your repo name is not different than your baseurl
-github_repo: "fastpages"
+#github_repo: "fastpages"
 
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value. 
@@ -39,8 +39,14 @@ baseurl: "/fastpages" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 minima:
   skin: dark
-#  social_links:
-#    instagram: amay.advani
+  social_links:
+  - Instagram: amay.advani
+    url: https://www.instagram.com/amay.advani/
+  - Github: amayadvani
+    url: https://github.com/amayadvani
+  - Linkedin: amayadvani
+    url: https://www.linkedin.com/in/amay-advani-67a56b264/
+
 
 # Set this to true to get LaTeX math equation support
 use_math: 
