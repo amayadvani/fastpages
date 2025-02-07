@@ -1,0 +1,157 @@
+<html>
+  <head>
+    <title>Game</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .game {
+        width: 700px;
+        height: 300px;
+        border: 10px solid grey;
+        background-color: darkgrey;
+        float: middle;
+      }
+      .chara {
+        width: 50px;
+        height: 50px;
+        background-color: green;
+        border-radius: 50%;
+        display: incline-block;
+        position: relative;
+        top: 235px;
+        margin: 10px;
+        border: 2px solid black;
+      }
+      .animate {
+        animation: jump 1000ms;
+      }
+      @keyframes jump {
+        0% {
+          top: 235px;
+        }
+        50% {
+          top: 150px;
+        }
+        100% {
+          top: 235px;
+        }
+      }
+      @keyframes obstacle {
+        0% {
+          left: 610px;
+        }
+        100% {
+          left: -30px;
+        }
+      }
+      @keyframes obstacle2 {
+        0% {
+          left: 610px;
+        }
+        100% {
+          left: -20px;
+        }
+      }
+      .obstacle {
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 30px solid darkred;
+        border-top: 30px solid transparent;
+        display: inline-block;
+        position: relative;
+        top: 145px;
+        left: 610px;
+        margin: 10px;
+      }
+      .obstacle-animate {
+        animation: obstacle 1500ms infinite linear;
+      }
+      .obstacle2 {
+        width: 30px;
+        height: 70px;
+        position: relative;
+        top: 130px;
+        left: 610px;
+        margin: 10px;
+        animation: obstacle2 2000ms infinite linear;
+        display: inline-block;
+      }
+      .hidden {
+        display: none;
+      }
+      .score {
+        width: 80px;
+        height: 20px;
+        background-color: darkgrey;
+        border: 2px solid grey;
+        margin: 20px;
+        text-align: center;
+      }
+      .button {
+        width: 80px;
+        height: 20px;
+        background-color: darkgrey;
+        border: 2px solid grey;
+        margin: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <div class="game" id="game">
+      <div class="chara" id="chara"></div>
+      <div class="obstacle obstacle-animate" id="obstacle"></div>
+      <div class="obstacle2 obstacle-animate hidden" id="obstacle2"></div>
+    </div>
+    <div class="score" id="score">Score</div>
+    <button onclick="pause()" class="button" id="pause">Pause!</button>
+    <button onclick="resume()" class="button" id="resume">Resume!</button>
+  </body>
+  <script>
+    document.getElementById("body").onkeydown = function (e) {
+      if (e.code === "Space") jump();
+      return;
+    };
+    var chara = document.getElementById("chara");
+    var obstacle = document.getElementById("obstacle");
+    var obstacle2 = document.getElementById("obstacle2");
+    var score = 0;
+
+    function jump(e) {
+      console.log(e);
+      score = score + 1;
+      document.getElementById("score").innerHTML = "Score: " + score;
+      chara.classList.add("animate");
+      setTimeout(function () {
+        chara.classList.remove("animate");
+      }, 1000);
+    }
+    function check() {
+      if (
+        parseInt(getComputedStyle(chara).top) > 200 &&
+        parseInt(getComputedStyle(obstacle).left) < 50
+      ) {
+        alert("You lose, loser!");
+        score = 0;
+        document.getElementById("score").innerHTML = "score: " + score;
+      }
+    }
+    setInterval(check, 100);
+
+    function pause() {
+      obstacle.classList.remove("obstacle-animate");
+    }
+    function resume() {
+      obstacle.classList.add("obstacle-animate");
+    }
+    if (score % 2 !== 0) {
+      obstacle.classList.add("hidden");
+      obstacle2.classList.remove("hidden");
+    } else{
+      obstacle.classList.remove("hidden");
+      obstacle2.classList.add("hidden");
+    }
+  </script>
+</html>

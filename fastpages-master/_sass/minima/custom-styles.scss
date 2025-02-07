@@ -1,0 +1,18 @@
+/*-----------------------------------*/
+/*--- IMPORT STYLES FOR FASTPAGES ---*/
+@import "minima/fastpages-styles";   
+
+
+
+/*-----------------------------------*/
+/*----- ADD YOUR STYLES BELOW -------*/
+
+// If you want to turn off dark background for syntax highlighting, comment or delete the below lin
+@import "minima/fastpages-dracula-highlight"; 
+@import "minima/dark-mode";
+
+a { color: green !important; }
+
+* {
+   font-family: 'Anybody', cursive !important;
+}
